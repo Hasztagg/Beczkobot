@@ -103,19 +103,19 @@
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: null,
+        rulesLink: https://docs.google.com/document/d/1U--vkgLbE8vocOOCOelf7UyWs4-DqRFHZy8IBufnXbg,
         themeLink: null,
-        fbLink: null,
+        fbLink: https://www.facebook.com/groups/beczkownicyofficial/,
         youtubeLink: null,
-        website: null,
+        website: https://www.facebook.com/groups/beczkownicyofficial/,
         intervalMessages: [],
         messageInterval: 5,
         songstats: true,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/NSFWlist.json",
-            OP: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/OPlist.json",
-            BANNED: "https://rawgit.com/" + fork + "/basicBot-customization/master/blacklists/BANNEDlist.json"
+            NSFW: "https://rawgit.com/Hasztagg/basicBot-customization/master/blacklists/NSFWlist.json",
+            OP: "https://rawgit.com/Hasztagg/basicBot-customization/master/blacklists/OPlist.json",
+            BANNED: "https://rawgit.com/Hasztagg/basicBot-customization/master/blacklists/BANNEDlist.json"
         }
     }));
 
