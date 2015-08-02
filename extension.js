@@ -98,7 +98,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Zapoznaj si\u0119 z regulaminem (http:\/\/tnij.org/regulamin\u005Fbeczki) i mi\u0142ej zabawy!",
+        motd: "Zapoznaj si\u0119 z regulaminem (http:\/\/tnij.org/regulamin \u005F beczki) i mi\u0142ej zabawy!",
         filterChat: false,
         etaRestriction: false,
         welcome: true,
