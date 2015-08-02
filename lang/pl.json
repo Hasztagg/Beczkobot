@@ -119,7 +119,7 @@
     "cycleguard": "Stra\u017cnik cyklu",
     "timeguard": "Stra\u017cnik czasu",
     "chatfilter": "filtr czatu",
-    "historyskip": "Pomijanie utwor\u00f3w z historii lol",
+    "historyskip": "Pomijanie utwor\u00f3w z historii",
     "lockdown": "zablokowane",
     "lockguard": "Stra\u017cnik blokady",
     "usercommands": "Komendy u\u017cytkownik\u00f3w",
@@ -202,5 +202,6 @@
     "voteratio": "\/me [@%%NAME%%] @%%USERNAME%% ~ wooty: %%WOOT%%, mehy: %%MEHS%%, \u015brednia (w\/m): %%RATIO%%.",
     "website": "\/me Zapraszamy do odwiedzenia naszej strony internetowej: %%LINK%%",
     "youtube": "\/me  [%%NAME%%] Subskrybuj nas na youtube: %%LINK%%",
-    "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M."
+    "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M.",
+    "kill": "\/me Nieeee!..."
 }
