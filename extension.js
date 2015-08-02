@@ -99,7 +99,7 @@
         motdEnabled: false,
         motdInterval: 5,
         motd: "Zapoznaj si\u0119 z regulaminem (http:\/\/tnij.org/regulamin-beczki) i mi\u0142ej zabawy!",
-        filterChat: true,
+        filterChat: false,
         etaRestriction: false,
         welcome: true,
         opLink: null,
