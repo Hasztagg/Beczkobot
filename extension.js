@@ -105,7 +105,7 @@
         opLink: null,
         rulesLink: "https://docs.google.com/document/d/1U--vkgLbE8vocOOCOelf7UyWs4-DqRFHZy8IBufnXbg",
         themeLink: null,
-        fbLink: "https://www.facebook.com/groups/beczkownicyofficial/",
+        fbLink: null,
         youtubeLink: null,
         website: "https://www.facebook.com/groups/beczkownicyofficial/",
         intervalMessages: [],
