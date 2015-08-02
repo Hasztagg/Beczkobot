@@ -56,21 +56,21 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "HaszbotBETA",
+        botName: "BeczkobotBETA",
         language: "polish",
         chatLink: "https://raw.githubusercontent.com/Hasztagg/basicBot-customization/master/lang/pl.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
-        autowoot: false,
+        autowoot: true,
         autoskip: false,
         smartSkip: true,
         cmdDeletion: true,
         maximumAfk: 120,
-        afkRemoval: true,
+        afkRemoval: false,
         maximumDc: 60,
         bouncerPlus: true,
-        blacklistEnabled: true,
+        blacklistEnabled: false,
         lockdownEnabled: false,
         lockGuard: false,
         maximumLocktime: 10,
@@ -78,7 +78,7 @@
         maximumCycletime: 10,
         voteSkip: false,
         voteSkipLimit: 10,
-        historySkip: false,
+        historySkip: true,
         timeGuard: true,
         maximumSongLength: 10,
         autodisable: true,
@@ -98,7 +98,7 @@
         afkRankCheck: "ambassador",
         motdEnabled: false,
         motdInterval: 5,
-        motd: "Temporary Message of the Day",
+        motd: "Zapoznaj si\u0119 z regulaminem (http:\/\/tnij.org/regulamin-beczki) i mi\u0142ej zabawy!",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
