@@ -202,6 +202,6 @@
     "commandscd": "\/me [@%%NAME%%] Czas odnowienia komend u\u017cytkownik\u00f3w jest teraz ustawiony na %%TIME%% sekund.",
     "voteratio": "\/me [@%%NAME%%] @%%USERNAME%% ~ wooty: %%WOOT%%, mehy: %%MEHS%%, \u015brednia (w\/m): %%RATIO%%.",
     "website": "\/me Zapraszamy do odwiedzenia naszej grupy na facebooku: %%LINK%%",
-    "youtube": "\/me  [%%NAME%%] Subskrybuj nas na youtube: %%LINK%%",
+    "youtube": "\/me  [%%NAME%%] Subskrybuj naszego mentora: %%LINK%%",
     "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M."
 }
