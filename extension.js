@@ -103,7 +103,7 @@
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: "http:\/\/tnij.org/regulamin\u005Fbeczki",
+        rulesLink: "http://tnij.org/regulamin_beczki",
         themeLink: null,
         fbLink: "https://www.facebook.com/groups/beczkownicyofficial/",
         youtubeLink: null,
