@@ -105,7 +105,7 @@
         opLink: null,
         rulesLink: "http://tnij.org/regulamin-beczki",
         themeLink: null,
-        fbLink: null,
+        fbLink: "https://www.facebook.com/groups/beczkownicyofficial/",
         youtubeLink: null,
         website: "https://www.facebook.com/groups/beczkownicyofficial/",
         intervalMessages: [],
