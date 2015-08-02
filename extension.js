@@ -108,9 +108,9 @@
         fbLink: "https://www.facebook.com/groups/beczkownicyofficial/",
         youtubeLink: null,
         website: "https://www.facebook.com/groups/beczkownicyofficial/",
-        intervalMessages: [],
-        messageInterval: 5,
-        songstats: true,
+        intervalMessages: ["test 1","test2"],
+        messageInterval: 1,
+        songstats: false,
         commandLiteral: "!",
         blacklists: {
             NSFW: "https://rawgit.com/Hasztagg/basicBot-customization/master/blacklists/NSFWlist.json",
