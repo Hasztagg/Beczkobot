@@ -103,7 +103,7 @@
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: "https://docs.google.com/document/d/1U--vkgLbE8vocOOCOelf7UyWs4-DqRFHZy8IBufnXbg",
+        rulesLink: "http://tnij.org/regulamin-beczki",
         themeLink: null,
         fbLink: null,
         youtubeLink: null,
