@@ -58,7 +58,7 @@
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "HaszbotBETA",
         language: "polish",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://raw.githubusercontent.com/Hasztagg/basicBot-customization/master/lang/pl.json",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
