@@ -56,7 +56,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Jeżeli chcesz uzyskać awans kliknij tutaj: http://bitly.com/1e1TmUP");
+                    API.sendChat("/me Je\u017celi chcesz uzyska\u0107 awans kliknij tutaj: http://bitly.com/1e1TmUP");
                 }
             }
         };
