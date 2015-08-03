@@ -121,7 +121,7 @@
         fbLink: "https://www.facebook.com/groups/beczkownicyofficial/",
         youtubeLink: "https://youtube.com/user/TheUwagaPies oraz https://youtube.com/user/wybuchajacebeczki",
         website: "https://www.facebook.com/groups/beczkownicyofficial/",
-        intervalMessages: ["RADA: jeżeli roz\u0142\u0105czysz si\u0119 przez przypadek, u\u017cyj !dc aby wr\u00f3ci\u0107 na swoje miejsce w kolejce.","RADA: U\u017cyj !rules aby otrzyma\u0107 link do zasad.", "RADA: Wpisz !fb albo !website aby otrzyma\u0107 link do naszej grupy na facebooku.", "RADA: Wpisz !help, aby otrzyma\u0107 link do obrazka t\u0142umacz\u0105cego pluga."],
+        intervalMessages: ["RADA: jeżeli roz\u0142\u0105czysz si\u0119 przez przypadek, u\u017cyj !dc aby wr\u00f3ci\u0107 na swoje miejsce w kolejce.","RADA: U\u017cyj !rules aby otrzyma\u0107 link do zasad.", "RADA: Wpisz !fb albo !website aby otrzyma\u0107 link do naszej grupy na facebooku.", "RADA: Wpisz !help, aby otrzyma\u0107 link do obrazka t\u0142umacz\u0105cego pluga.", "RADA: Istneje sekretny link do otrzymania awansu, wpisz !awans, aby si\u0119 dla Ciebie pojawi\u0142."],
         messageInterval: 5,
         songstats: false,
         commandLiteral: "!",
