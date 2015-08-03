@@ -60,6 +60,25 @@
                 }
             }
         };
+        
+        bot.commands.gonciarzCommand = {
+            command: 'gonciarz',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    var crowd = API.getUsers();
+                            var msg = chat.message;
+                            var argument = msg.substring(cmd.length + 1).replace(/@/g, '');
+                            var randomUser = Math.floor(Math.random() * crowd.length);
+                            var randomBall = Math.floor(Math.random() * basicBot.chat.balls.length);
+                            var randomSentence = Math.floor(Math.random() * 1);
+                            API.sendChat(subChat(basicBot.chat.ball, {name: chat.un, botname: basicBot.settings.botName, question: argument, response: basicBot.chat.balls[randomBall]}));
+                }
+            }
+        };
 
         //Load the chat package again to account for any changes
         bot.loadChat();
