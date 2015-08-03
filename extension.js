@@ -60,6 +60,19 @@
                 }
             }
         };
+        
+        bot.commands.dnsCommand = {
+            command: 'dns',  //The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', //Minimum user permission to use the command
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                if (!bot.commands.executable(this.rank, chat)) return void (0);
+                else {
+                    API.sendChat("/me Wyst\u0119puj\u0105 problemy z DNS z powodu luki (wi\u0119cej o tym tutaj: http://bit.ly/1E4O9CI"). Aby to naprawić zmień DNS na googlowskie (http:\/\/bit.ly\/1K17w1m) i od\u015bwie\u017a przegl\u0105dark\u0119.);
+                }
+            }
+        };
 
         //Load the chat package again to account for any changes
         bot.loadChat();
