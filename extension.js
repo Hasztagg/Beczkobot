@@ -112,13 +112,13 @@
         usercommandsEnabled: true,
         skipPosition: 3,
         skipReasons: [
-            ["theme", "This song does not fit the room theme. "],
-            ["op", "This song is on the OP list. "],
-            ["history", "This song is in the history. "],
-            ["mix", "You played a mix, which is against the rules. "],
-            ["sound", "The song you played had bad sound quality or no sound. "],
-            ["nsfw", "The song you contained was NSFW (image or sound). "],
-            ["unavailable", "The song you played was not available for some users. "]
+            ["muzyka", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b nie jest muzyk\u0105. "],
+            ["ban", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest zbanowanym utworem.  "],
+            ["history", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b znajduje si\u0119 w historii. "],
+            ["mix", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest mixem, kt\u00f3ry nie jest dozwolony w tych godzinach. "],
+            ["sound", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015 ma s\u0142ab\u0105 jako\u015b\u0107 d\u017awi\u0119ku. "],
+            ["earrape", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest earrapem. "],
+            ["niedostepne", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest niedost\u0119pny dla niekt\u00f3rych u\u017cytkownik\u00f3w. "]
         ],
         afkpositionCheck: 15,
         afkRankCheck: "user",
