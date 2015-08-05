@@ -116,7 +116,7 @@
             ["ban", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest zbanowanym utworem.  "],
             ["history", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b znajduje si\u0119 w historii. "],
             ["mix", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest mixem, kt\u00f3ry nie jest dozwolony w tych godzinach. "],
-            ["sound", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015 ma s\u0142ab\u0105 jako\u015b\u0107 d\u017awi\u0119ku. "],
+            ["sound", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b ma s\u0142ab\u0105 jako\u015b\u0107 d\u017awi\u0119ku. "],
             ["earrape", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest earrapem. "],
             ["niedostepne", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest niedost\u0119pny dla niekt\u00f3rych u\u017cytkownik\u00f3w. "]
         ],
