@@ -119,7 +119,7 @@
             ["sound", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b ma s\u0142ab\u0105 jako\u015b\u0107 d\u017awi\u0119ku. "],
             ["earrape", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest earrapem. "],
             ["niedostepne", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest niedost\u0119pny dla niekt\u00f3rych u\u017cytkownik\u00f3w. "]
-        ],
+            ["zadlugie", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest zbyt d\u0142ugi, potrzebujesz pozwolenia na puszczanie utwor\u00f3w d\u0142u\u017cszych ni\u017c 6 minut. "]
         afkpositionCheck: 15,
         afkRankCheck: "user",
         motdEnabled: false,
