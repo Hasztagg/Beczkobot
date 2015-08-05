@@ -130,7 +130,7 @@
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: "http://tnij.org/regulamin_beczki",
+        rulesLink: "http://tinyurl.com/regulamin-beczki",
         themeLink: null,
         fbLink: "https://www.facebook.com/groups/beczkownicyofficial/",
         youtubeLink: "https://youtube.com/TheUwagaPies https://youtube.com/wybuchajacebeczki oraz https://youtube.com/TheBeeczka",
