@@ -82,7 +82,7 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "BeczkobotBETA",
+        botName: "Beczkobot",
         language: "polish",
         chatLink: "https://raw.githubusercontent.com/Hasztagg/basicBot-customization/master/lang/pl.json",
         startupCap: 1, // 1-200
