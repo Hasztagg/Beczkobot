@@ -126,7 +126,7 @@
         afkRankCheck: "user",
         motdEnabled: true,
         motdInterval: 8,
-        motd: "Do\u0142\u0105cz do grupy plugowej na FB: https://www.facebook.com/groups/512230408941643",
+        motd: "Już jutro event z okazji 1. miesiąca naszej społeczności! Dołącz do grupy po więcej informacji: https://www.facebook.com/groups/512230408941643",
         filterChat: false,
         etaRestriction: false,
         welcome: true,
