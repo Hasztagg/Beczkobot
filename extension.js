@@ -38,22 +38,22 @@
         bot.commands.baconCommand = {
             command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
-            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
-                if (this.type === 'startsWith' && chat.message.length !== cmd.length) return void (0);
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me Bacon!!!");
                 }
             }
-        },
+        };
         
-        bot.commands.awansCommand = {
+        bot.commands.commandCommand = {
             command: 'awans',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
-            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
-                if (this.type === 'startsWith' && chat.message.length !== cmd.length) return void (0);
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me Użyj tego linku aby otrzymać awans: http:\/\/bit.ly\/1e1TmUO");
@@ -61,12 +61,12 @@
             }
         },
         
-        bot.commands.dnsCommand = {
+        bot.commands.commandCommand = {
             command: 'dns',  //The command to be called. With the standard command literal this would be: !bacon
             rank: 'user', //Minimum user permission to use the command
-            type: 'startsWith', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
             functionality: function (chat, cmd) {
-                if (this.type === 'startsWith' && chat.message.length !== cmd.length) return void (0);
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
                     API.sendChat("/me Wyst\u0119puj\u0105 problemy z DNS z powodu luki (wi\u0119cej o tym tutaj: http://bit.ly/1E4O9CI). Aby to naprawić zmień DNS na googlowskie (http:\/\/bit.ly\/1K17w1m) i od\u015bwie\u017a przegl\u0105dark\u0119.");
