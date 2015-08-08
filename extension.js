@@ -126,7 +126,9 @@
         afkRankCheck: "user",
         motdEnabled: true,
         motdInterval: 8,
-        motd: "Już DZISIAJ event z okazji 1. miesiąca naszej społeczności! Dołącz do grupy po więcej informacji: https://www.facebook.com/groups/512230408941643",
+        motd: "Panie i panowie, Beczki, witamy na evencie z okazji miesiąca naszej społeczności na plug.dj! O 21:30 startujemy, już teraz mogę Wam zdradzić, co przygotowaliśmy! Mamy dla Was dwa konkursy, w każdym z nich jest do wygrania ranga Stałego DJa!
+Pierwszy konkurs to "Jaki to utwór?"! Przygotowaliśmy 29 piosenek po 30 sekund, a Waszym zadaniem jest odgadnięcie wykonawcy i tytułu. Kto pierwszy, ten lepszy!
+Drugi konkurs to "Najlepszy utwór"! Zasady są proste - będziecie mieli 5 minut na wybranie piosenki i wejście do kolejki. Osoba, której piosenka się najbardziej spodoba (dostanie najwięcej wootów) wygrywa!",
         filterChat: false,
         etaRestriction: false,
         welcome: true,
