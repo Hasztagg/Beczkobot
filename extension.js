@@ -126,7 +126,7 @@
         afkRankCheck: "user",
         motdEnabled: true,
         motdInterval: 8,
-        motd: "Już DZISIAJ event z okazji 1. miesiąca naszej społeczności! Dołącz do grupy po więcej informacji: https://www.facebook.com/groups/512230408941643",
+        motd: null,
         filterChat: false,
         etaRestriction: false,
         welcome: true,
