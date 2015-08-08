@@ -110,7 +110,7 @@
         autodisable: false,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        skipPosition: 3,
+        skipPosition: null,
         skipReasons: [
             ["muzyka", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b nie jest muzyk\u0105. "],
             ["ban", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b jest zbanowanym utworem.  "],
