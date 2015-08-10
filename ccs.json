@@ -30,12 +30,12 @@
         "playback": null,
         "admin": "https://cdn.radiant.dj/rcs/icons/radiant/admin.png",
         "ambassador": "https://cdn.radiant.dj/rcs/icons/radiant/ambassador.png",
-        "host": "https://cdn.radiant.dj/rcs/icons/radiant/host.png",
-        "cohost": "https://cdn.radiant.dj/rcs/icons/radiant/cohost.png",
-        "manager": "https://cdn.radiant.dj/rcs/icons/radiant/manager.png",
-        "bouncer":  "https://cdn.radiant.dj/rcs/icons/radiant/bouncer.png",
+        "host": "http://i.imgur.com/qMOJLvf.png",
+        "cohost": "http://i.imgur.com/X7DtDHE.png",
+        "manager": "http://i.imgur.com/SZrx1Y3.png",
+        "bouncer":  "http://i.imgur.com/qVC9Xyb.png",
         "rdj": "https://cdn.radiant.dj/rcs/icons/radiant/residentdj.png",
-        "subscriber": "https://cdn.radiant.dj/rcs/icons/radiant/subscriber.png"
+        "subscriber": null
     },
     "emotes": {
     	"emote_name": null
