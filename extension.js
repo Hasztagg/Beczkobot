@@ -93,7 +93,7 @@
         smartSkip: true,
         cmdDeletion: true,
         maximumAfk: 120,
-        afkRemoval: false,
+        afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: false,
         blacklistEnabled: true,
@@ -137,7 +137,7 @@
         youtubeLink: "https://youtube.com/TheUwagaPies https://youtube.com/wybuchajacebeczki oraz https://youtube.com/TheBeeczka",
         website: "https://www.facebook.com/groups/beczkownicyofficial/ oraz http://www.facebook.com/groups/beczkownicy.plugdj/",
         intervalMessages: ["RADA: jeżeli roz\u0142\u0105czysz si\u0119 przez przypadek, u\u017cyj !dc aby wr\u00f3ci\u0107 na swoje miejsce w kolejce.","RADA: U\u017cyj !rules aby otrzyma\u0107 link do zasad.", "RADA: Wpisz !fb albo !website aby otrzyma\u0107 link do naszych grup na facebooku.", "RADA: Wpisz !help, aby otrzyma\u0107 link do obrazka t\u0142umacz\u0105cego pluga.", "Do\u0142\u0105cz do grupy plugowej Beczkownik\u00f3w! https://fb.com/groups/beczkownicy.plugdj/"],
-        messageInterval: 1,
+        messageInterval: 5,
         songstats: false,
         commandLiteral: "!",
         blacklists: {
