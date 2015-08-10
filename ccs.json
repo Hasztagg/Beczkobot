@@ -1,7 +1,7 @@
 {
     "room": "Beczkownicy Zapytaj Beczke",
     "author": "Karate.gif",
-    "icon": null,
+    "icon": http://i.imgur.com/p1XEZLK.png,
     "css": null,
     "rules": {
         "allowAutorespond": true,
@@ -14,16 +14,16 @@
         "forceSmartVote": false
     },
     "ccc": {
-        "admin": null,
-        "ambassador": null,
-        "host": null,
-        "cohost": null,
-        "manager": null,
-        "bouncer": null,
-        "rdj": null,
-        "subscriber": null,
-        "friend": null,
-        "user": null
+        "admin":                "#42A5DC",
+        "ambassador":           "#84B423",
+        "host":                 "#F3508F",
+        "cohost":               "#F3508F",
+        "manager":              "#F3508F",
+        "bouncer":              "#F3508F",
+        "rdj":                  "#5DB4FF",
+        "subscriber":           "#A1A6B3",
+        "friend":               "#B35D88",
+        "user":                 "#8B92A3"
     },
     "images": {
         "background": null,
