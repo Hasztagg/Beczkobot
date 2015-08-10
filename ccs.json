@@ -1,7 +1,7 @@
 {
     "room": "Beczkownicy Zapytaj Beczke",
     "author": "Karate.gif",
-    "icon": http://i.imgur.com/p1XEZLK.png,
+    "icon": "http://i.imgur.com/p1XEZLK.png",
     "css": null,
     "rules": {
         "allowAutorespond": true,
