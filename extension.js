@@ -1,105 +1,47 @@
 (function () {
 
-    //Change this to your GitHub username so you don't have to modify so many things.
+    // Change this to your GitHub username so you don't have to modify so many things.
     var fork = "Hasztagg";
 
-    //Define our function responsible for extending the bot.
+    // Define our function responsible for extending the bot.
     function extend() {
-        //If the bot hasn't been loaded properly, try again in 1 second(s).
+        // If the bot hasn't been loaded properly, try again in 1 second(s).
         if (!window.bot) {
-            return setTimeout(extend, 1 * 1000);
+          return setTimeout(extend, 1 * 1000);
         }
 
-        //Precaution to make sure it is assigned properly.
+        // Precaution to make sure it is assigned properly.
         var bot = window.bot;
 
-        //Load custom settings set below
+        // Load custom settings set below
         bot.retrieveSettings();
-        
+
+        //Extend the bot here, either by calling another function or here directly.
+
+        // You can add more spam words to the bot.
         var spamWords = ['spam1', 'spam2', 'spam3', 'spam4'];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
 
-        /*
-         Extend the bot here, either by calling another function or here directly.
-         Model code for a bot command:
-
-         bot.commands.commandCommand = {
-         command: 'cmd',
-         rank: 'user/bouncer/mod/manager',
-         type: 'startsWith/exact',
-         functionality: function(chat, cmd){
-         if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-         if( !bot.commands.executable(this.rank, chat) ) return void (0);
-         else{
-         //Commands functionality goes here.
-         }
-         }
-         }
-
-         */
-         
-         function tsendChat(msg) {
-        API.sendChat(msg);
-}
-
+        // Example code for a bot command:
         bot.commands.baconCommand = {
-            command: 'bacon',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
+            command: 'bacon',  // The command to be called. With the standard command literal this would be: !bacon
+            rank: 'user', // Minimum user permission to use the command
+            type: 'exact', // Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
+              functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                 if (!bot.commands.executable(this.rank, chat)) return void (0);
                 else {
-                    API.sendChat("/me Bacon!!!");
+                  API.sendChat("/me Bacon!!!");
                 }
-            }
-        };
-        
-        bot.commands.commandCommand = {
-            command: 'awans',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me Użyj tego linku aby otrzymać awans: http:\/\/bit.ly\/1e1TmUO");
-                }
-            }
-        };
-        
-        bot.commands.commandCommand = {
-            command: 'dns',  //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                if (!bot.commands.executable(this.rank, chat)) return void (0);
-                else {
-                    API.sendChat("/me Wyst\u0119puj\u0105 problemy z DNS z powodu luki (wi\u0119cej o tym tutaj: http://bit.ly/1E4O9CI). Aby to naprawić zmień DNS na googlowskie (http:\/\/bit.ly\/1K17w1m) i od\u015bwie\u017a przegl\u0105dark\u0119.");
-                }
-            }
-        };
-        
-         bot.commands.emotikonyCommand = {
-            command: 'emoty', //The command to be called. With the standard command literal this would be: !bacon
-            rank: 'user', //Minimum user permission to use the command
-            type: 'exact', //Specify if it can accept variables or not (if so, these have to be handled yourself through the chat.message
-            functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
-                if (!bot.commands.executable(this.rank, chat)) return void(0);
-                else {
-                    API.sendChat("/me Emotikony jakie uzyskujemy z RCS: https://rcs.radiant.dj/emotes");
-                }
-            }
-        };
+              }
+            };
 
-        //Load the chat package again to account for any changes
+        // Load the chat package again to account for any changes
         bot.loadChat();
 
-    }
+      }
 
     //Change the bots default settings and make sure they are loaded on launch
 
@@ -107,6 +49,8 @@
         botName: "Beczkobot",
         language: "polish",
         chatLink: "https://raw.githubusercontent.com/Hasztagg/basicBot-customization/master/lang/pl.json",
+        scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
+        roomLock: false, // Requires an extension to re-load the script
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
