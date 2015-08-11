@@ -1,5 +1,7 @@
 # Emoty
 
+Dostępne tylko dla posiadaczy RCS (http://rcs.radiant.dj)
+
 | Komenda          | Wygląd                         | 
  ----------------- | ----------------------------   | 
 | :beczka:         | ![alt tag](http://i.imgur.com/mQJPo16.png ) |
