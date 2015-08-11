@@ -21,9 +21,9 @@
         "manager": "#AB4086",
         "bouncer": "#F3508F",
         "rdj": "#5DB4FF",
-        "subscriber": "#A1A6B3",
-        "friend": "#B35D88",
-        "user": "#8B92A3"
+        "subscriber": null,
+        "friend": null,
+        "user": null
     },
     "images": {
         "background": null,
