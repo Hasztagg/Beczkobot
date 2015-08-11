@@ -52,6 +52,23 @@
                 }
             }
         };
+        
+        bot.commands.awansCommand = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
+            command: 'awans', //twoja nazwa komendy, bez !
+            rank: 'user', //poziom użytkownika do jej odpalenia
+            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
+                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                else {
+                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
+                    API.sendChat("/me Użyj tego linku aby otrzymać awans: http:\/\/bit.ly\/1e1TmUO"); //wysyla wiadomosc
+
+                }
+            }
+        };
+        
+        
 
         // Load the chat package again to account for any changes
         bot.loadChat();
@@ -112,12 +129,12 @@
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: "http://tinyurl.com/regulamin-beczki",
+        rulesLink: "http://tnij.org/regulamin_beczki",
         themeLink: null,
         fbLink: "https://www.facebook.com/groups/beczkownicyofficial/ oraz http://www.facebook.com/groups/beczkownicy.plugdj/",
         youtubeLink: "https://youtube.com/TheUwagaPies https://youtube.com/wybuchajacebeczki oraz https://youtube.com/TheBeeczka",
         website: "https://www.facebook.com/groups/beczkownicyofficial/ oraz http://www.facebook.com/groups/beczkownicy.plugdj/",
-        intervalMessages: ["RADA: jeżeli roz\u0142\u0105czysz si\u0119 przez przypadek, u\u017cyj !dc aby wr\u00f3ci\u0107 na swoje miejsce w kolejce.","RADA: U\u017cyj !rules aby otrzyma\u0107 link do zasad.", "RADA: Wpisz !fb albo !website aby otrzyma\u0107 link do naszych grup na facebooku.", "RADA: Wpisz !help, aby otrzyma\u0107 link do obrazka t\u0142umacz\u0105cego pluga.", "Do\u0142\u0105cz do grupy plugowej Beczkownik\u00f3w! https://fb.com/groups/beczkownicy.plugdj/"],
+        intervalMessages: ["Do\u0142\u0105cz do grupy plugowej Beczkownik\u00f3w! https://fb.com/groups/beczkownicy.plugdj/", "RADA: jeżeli roz\u0142\u0105czysz si\u0119 przez przypadek, u\u017cyj !dc aby wr\u00f3ci\u0107 na swoje miejsce w kolejce.", "RADA: U\u017cyj !rules aby otrzyma\u0107 link do zasad.", "RADA: Wpisz !fb albo !website aby otrzyma\u0107 link do naszych grup na facebooku.", "RADA: Wpisz !help, aby otrzyma\u0107 link do obrazka t\u0142umacz\u0105cego pluga."],
         messageInterval: 5,
         songstats: false,
         commandLiteral: "!",
