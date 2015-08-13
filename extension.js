@@ -38,31 +38,43 @@
               }
             };
             
-        bot.commands.emotyKomenda = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'emoty', //twoja nazwa komendy, bez !
-            rank: 'user', //poziom użytkownika do jej odpalenia
-            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
+        bot.commands.emotyKomenda = {
+            command: 'emoty', 
+            rank: 'user', 
+            type: 'exact', 
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
+                if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me Lista dodatowych emotikon: http://git.io/v36w9"); //wysyla wiadomosc
+                    API.sendChat("/me Lista dodatowych emotikon: http://git.io/v36w9"); 
 
                 }
             }
         };
         
-        bot.commands.awansCommand = { //ogólnie musi być bot.commands.jakasunikalnanazwa = {
-            command: 'awans', //twoja nazwa komendy, bez !
-            rank: 'user', //poziom użytkownika do jej odpalenia
-            type: 'exact', //czy komenda może być wywolywana z argumentami (start with) czy bez (exact), raczej zostaw jak jest
+        bot.commands.awansCommand = { 
+            command: 'awans', 
+            rank: 'user', 
+            type: 'exact', 
             functionality: function (chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); //nie odpala komendy jesli jest argument, a wybrano ze nie
-                if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
+                if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me Użyj tego linku aby otrzymać awans: http:\/\/bit.ly\/1e1TmUO"); //wysyla wiadomosc
+                    API.sendChat("/me Użyj tego linku aby otrzymać awans: http:\/\/bit.ly\/1e1TmUO"); 
+
+                }
+            }
+        };
+        
+        bot.commands.rcsCommand = { 
+            command: 'rcs',
+            rank: 'user', 
+            type: 'exact', 
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
+                if (!bot.commands.executable(this.rank, chat)) return void(0); 
+                else {
+                    API.sendChat("/me Aby w pe\u0142ni korzysta\u0107 z mo\u017cliwo\u015bci naszego pokoju zalecamy u\u017cywanie RCS (http://rcs.radiant.dj). Pozwala to na zobaczenie dodatkowych emotikon, zrobionych przez nas ikon rang i wiele innych rzeczy!"); //wysyla wiadomosc
 
                 }
             }
