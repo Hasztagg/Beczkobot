@@ -2,7 +2,7 @@
     "room": "Beczkownicy Zapytaj Beczke",
     "author": "Karate.gif",
     "icon": "http://i.imgur.com/mnfW1Vz.png",
-    "css": "https://rawgit.com/Hasztagg/Beczkobot/master/style.css",
+    "css": "https://rawgit.com/Hasztagg/Beczkobot/master/CCS/style.css",
     "rules": {
         "allowAutorespond": true,
         "allowAutowoot": true,
