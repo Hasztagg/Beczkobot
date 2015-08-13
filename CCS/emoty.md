@@ -15,3 +15,5 @@ Dostępne tylko dla posiadaczy RCS (http://rcs.radiant.dj)
 | :pozdrawiam:     | ![alt tag](http://i.imgur.com/PA3GnHz.png) |
 | :pankurczak:     | ![alt tag](http://i.imgur.com/cw2K1qQ.gif) |
 | :shadowban:      | ![alt tag](http://i.imgur.com/484ltWn.png) |
+| :kruu:           | ![alt tag](http://i.imgur.com/pwMJOUB.png) |
+| :gruu:           | ![alt tag](http://i.imgur.com/2mwIBNL.png) |
