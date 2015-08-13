@@ -47,7 +47,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0); //nie odpala komendy jesli uzytkownik nie ma odpowiedniej rangi
                 else {
                     //kod jaki bot wykonuje, dowolny JS, korzystaj z front-end API plugdj
-                    API.sendChat("/me Lista dodatowych emotikon: http://git.io/v3Wtm"); //wysyla wiadomosc
+                    API.sendChat("/me Lista dodatowych emotikon: http://git.io/v36w9"); //wysyla wiadomosc
 
                 }
             }
