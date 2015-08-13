@@ -5,6 +5,10 @@
     background-position: center center;
 }
 /*
+
+#room-bar * {
+    font-size: 0px;
+}
 #room-name {
     top: 6px;
     background: url("https://i.imgur.com/4vYYqqQ.png") no-repeat top left content-box;
