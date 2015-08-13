@@ -46,7 +46,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    API.sendChat("/me Lista dodatowych emotikon: http://git.io/v36w9"); 
+                    API.sendChat("/me :information_source: Lista dodatowych emotikon: http://git.io/v36w9"); 
 
                 }
             }
@@ -60,7 +60,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    API.sendChat("/me Użyj tego linku aby otrzymać awans: http:\/\/bit.ly\/1e1TmUO"); 
+                    API.sendChat("/me :star: Użyj tego linku aby otrzymać awans: http:\/\/bit.ly\/1e1TmUO"); 
 
                 }
             }
@@ -74,7 +74,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    API.sendChat("/me Aby w pe\u0142ni korzysta\u0107 z mo\u017cliwo\u015bci naszego pokoju zalecamy u\u017cywanie RCS (http://rcs.radiant.dj). Pozwala to na zobaczenie dodatkowych emotikon, zrobionych przez nas ikon rang i wiele innych rzeczy!"); //wysyla wiadomosc
+                    API.sendChat("/me :information_source: Aby w pe\u0142ni korzysta\u0107 z mo\u017cliwo\u015bci naszego pokoju zalecamy u\u017cywanie RCS (http://rcs.radiant.dj). Pozwala to na zobaczenie dodatkowych emotikon, zrobionych przez nas ikon rang i wiele innych rzeczy!"); //wysyla wiadomosc
 
                 }
             }
