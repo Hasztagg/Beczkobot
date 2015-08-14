@@ -13,6 +13,10 @@
     background-position: center center;
 }
 
+[data-cid|="9460483"] .msg .from .icon-chat-manager {
+background-image: url('https://i.imgur.com/DO20H9J.png') !important;
+}
+
 /*
 #room-bar * {
     font-size: 0px;
