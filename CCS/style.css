@@ -13,9 +13,16 @@
     background-position: center center;
 }
 /* Beczkobot - ikonka */
-[data-cid|="9460483"] .msg .from .icon-chat-manager {
-background-image: url('http://i.imgur.com/Jy46QPx.png') !important; /* by @szamani */
+.id-9460483 > .msg > .from > i.icon-chat-manager {
+    background: url("http://i.imgur.com/Jy46QPx.png") no-repeat !important;
 }
+#user-lists .list.room .user.id-9460483 .icon-chat-manager {
+    background: url("http://i.imgur.com/Jy46QPx.png") no-repeat !important;
+}
+#waitlist .list .user.id-9460483 .name .icon-chat-manager {
+    background: url("http://i.imgur.com/Jy46QPx.png") no-repeat !important;
+}
+
 
 /* Testowe */
 #chat .cm .icon-chat-manager + .un,#user-lists .group.manager ~ .user,#user-lists .list.room .user .icon-chat-manager + .name,#user-rollover.is-staff .info .role .icon-chat-manager + span,#dialog-user-role .role-menu .selected .icon-chat-manager + span,#dialog-user-role .role-menu .menu .manager span{
