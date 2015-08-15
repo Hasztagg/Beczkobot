@@ -29,8 +29,12 @@
     text-shadow: 0 0 10px #00FFFF;
 }
 
-#chat .cm .icon-chat-cohost + .un,#user-lists .group.cohost ~ .user,#user-lists .list.room .user .icon-chat-cohost + .name,#user-rollover.is-staff .info .role .icon-chat-cohost + span,#dialog-user-role .role-menu .selected .icon-chat-cohost + span,#dialog-user-role .role-menu .menu .cohost span{
+#chat .id-6598771.cm .icon-chat-cohost + .un,#user-lists .group.cohost ~ .user,#user-lists .list.room .user .icon-chat-cohost + .name,#user-rollover.is-staff .info .role .icon-chat-cohost + span,#dialog-user-role .role-menu .selected .icon-chat-cohost + span,#dialog-user-role .role-menu .menu .cohost span{
     text-shadow: 0 0 10px #00FFFF;
+}
+/* Zawsze pokazuje suwak z glosnoscia */
+#volume .slider, #playback-controls{
+  display: block !Important;
 }
 
 /*
