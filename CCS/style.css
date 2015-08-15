@@ -17,6 +17,10 @@
 background-image: url('https://i.imgur.com/DO20H9J.png') !important;
 }
 
+#chat .cm .icon-chat-manager + .un,#user-lists .group.manager ~ .user,#user-lists .list.room .user .icon-chat-manager + .name,#user-rollover.is-staff .info .role .icon-chat-manager + span,#dialog-user-role .role-menu .selected .icon-chat-manager + span,#dialog-user-role .role-menu .menu .manager span{
+    text-shadow: 0 0 10px #00FFFF;
+}
+
 /*
 #room-bar * {
     font-size: 0px;
