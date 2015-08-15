@@ -1,7 +1,7 @@
 {
     "room": "Beczkownicy Zapytaj Beczke",
     "author": "Hasztagg",
-    "icon": "http://i.imgur.com/zZzKuQO.png",
+    "icon": "http://i.imgur.com/mnfW1Vz.png",
     "css": "https://rawgit.com/Hasztagg/Beczkobot/master/CCS/style.css",
     "rules": {
         "allowAutorespond": true,
