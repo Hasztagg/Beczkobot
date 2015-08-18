@@ -80,8 +80,8 @@
             }
         };
         
-        bot.commands.rcsCommand = { 
-            command: 'rcs',
+        bot.commands.teczkaCommand = { 
+            command: 'teczka',
             rank: 'user', 
             type: 'exact', 
             functionality: function (chat, cmd) {
