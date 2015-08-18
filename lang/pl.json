@@ -197,7 +197,7 @@
     "pong": "\/me Ping! A nie, pong!",
     "reload": "\/me Zaraz wracam ;)",
     "removenotinwl": "\/me :warning: [@%%NAME%%] Wybrany u\u017cytkownik @%%USERNAME%% nie jest na li\u015bcie oczekiwania.",
-    "roomrules": "\/me :information_source: Zasady: %%LINK%% English rules here: http:\/\/pastebin.com/5J60rLyE",
+    "roomrules": "\/me :information_source: Zasady: %%LINK%%",
     "sessionstats": "\/me :information_source: [@%%NAME%%] Wszystkie wooty: %%WOOTS%%, wszystkie mehy: %%MEHS%%, wszystkie graby: %%GRABS%%.",
     "forceskip": "\/me :information_source: [%%NAME%% u\u017cy\u0142 forceskip]",
     "madeby": "\/me Bot zosta\u0142 stworzony przez %%NAME%%.",
