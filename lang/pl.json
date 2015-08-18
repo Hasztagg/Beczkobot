@@ -213,7 +213,7 @@
     "unmuterank": "\/me :warning: [@%%NAME%%] Nie mo\u017cesz odmutowa\u0107 os\u00f3b z tak\u0105 sam\u0105 lub wy\u017csz\u0105 rang\u0105 ni\u017c twoja.",
     "commandscd": "\/me :information_source: [@%%NAME%%] Czas odnowienia komend u\u017cytkownik\u00f3w jest teraz ustawiony na %%TIME%% sekund.",
     "voteratio": "\/me :information_source: [@%%NAME%%] @%%USERNAME%% ~ wooty: %%WOOT%%, mehy: %%MEHS%%, \u015brednia (w\/m): %%RATIO%%.",
-    "website": "\/me :information_source: Zapraszamy do odwiedzenia naszej grupy na facebooku: %%LINK%%",
+    "website": "\/me :information_source: Zapraszamy do odwiedzenia naszych grup na facebooku: %%LINK%%",
     "youtube": "\/me :information_source: Subskrybuj naszego mentora: %%LINK%%",
     "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M."
 }
