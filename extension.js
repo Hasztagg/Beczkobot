@@ -93,6 +93,23 @@
                 }
             }
         };
+        
+          bot.commands._nightmode = {
+            command: 'nightmode',
+            rank: 'mod',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    bot.settings.timeGuard = !bot.settings.timeGuard;
+                    bot.settings.blacklistEnabled = !bot.settings.blacklistEnabled;
+                    bot.settings.historySkip = !bot.settings.historySkip;
+                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '.';
+                    API.sendChat(tempstr);
+                }
+            }
+        };
 
         // Load the chat package again to account for any changes
         bot.loadChat();
