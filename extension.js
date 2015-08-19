@@ -102,11 +102,11 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
-                    bot.settings.timeGuard = !bot.settings.timeGuard;
+                    bot.settings.maximumSongLength = !bot.settings.maximumSongLength;
                     bot.settings.voteSkip = !bot.settings.voteSkip;
                     bot.settings.voteSkipLimit = !bot.settings.voteSkipLimit;
-                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard 70 ', Voteskip: 'bot.settings.voteSkip + ', Limit skipa: 'bot.settings.voteSkipLimit 3';
-                    API.sendChat(tempstr);
+                    var tempstra = "TimeGuard ustawiono na: " + bot.settings.maximumSongLength 70 ', Voteskip: 'bot.settings.voteSkip + ', Limit skipa: 'bot.settings.voteSkipLimit 3';
+                    API.sendChat(tempstra);
                 }
             }
         };
@@ -119,10 +119,10 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
-                    bot.settings.timeGuard = !bot.settings.timeGuard;
+                    bot.settings.maximumSongLength = !bot.settings.maximumSongLength;
                     bot.settings.voteSkip = !bot.settings.voteSkip;
-                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard 12 ', Voteskip: 'bot.settings.voteSkip - ';
-                    API.sendChat(tempstr);
+                    var tempstrb = "TimeGuard ustawiono na: " + bot.settings.maximumSongLength 12 ', Voteskip: 'bot.settings.voteSkip - ';
+                    API.sendChat(tempstrb);
                 }
             }
         };
