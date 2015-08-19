@@ -19,7 +19,7 @@
         //Extend the bot here, either by calling another function or here directly.
 
         // You can add more spam words to the bot.
-        var spamWords = ['spam1', 'spam2', 'spam3', 'spam4'];
+        var spamWords = ['ban', '@Beczkobot'];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
@@ -94,8 +94,8 @@
             }
         };
         
-          bot.commands._nightmode = {
-            command: 'nightmode',
+        bot.commands._nightmodeon = {
+            command: 'nightmodeon',
             rank: 'mod',
             type: 'exact',
             functionality: function(chat, cmd) {
@@ -103,9 +103,25 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     bot.settings.timeGuard = !bot.settings.timeGuard;
-                    bot.settings.blacklistEnabled = !bot.settings.blacklistEnabled;
-                    bot.settings.historySkip = !bot.settings.historySkip;
-                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard + ', Blacklist: ' + bot.settings.blacklistEnabled + ', HistorySkip: ' + bot.settings.historySkip + '.';
+                    bot.settings.voteSkip = !bot.settings.voteSkip;
+                    bot.settings.voteSkipLimit = !bot.settings.voteSkipLimit;
+                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard 70 ', Voteskip: 'bot.settings.voteSkip + ', Limit skipa: 'bot.settings.voteSkipLimit 3';
+                    API.sendChat(tempstr);
+                }
+            }
+        };
+        
+        bot.commands._nightmodeoff = {
+            command: 'nightmodeoff',
+            rank: 'mod',
+            type: 'exact',
+            functionality: function(chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
+                if (!bot.commands.executable(this.rank, chat)) return void(0);
+                else {
+                    bot.settings.timeGuard = !bot.settings.timeGuard;
+                    bot.settings.voteSkip = !bot.settings.voteSkip;
+                    var tempstr = "TimeGuard ustawiono na: " + bot.settings.timeGuard 12 ', Voteskip: 'bot.settings.voteSkip - ';
                     API.sendChat(tempstr);
                 }
             }
