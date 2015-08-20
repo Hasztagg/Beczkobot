@@ -19,7 +19,7 @@
         //Extend the bot here, either by calling another function or here directly.
 
         // You can add more spam words to the bot.
-        var spamWords = ['ban', '@Beczkobot'];
+        var spamWords = ['ban', '@Beczkobot', 'skipuj', 'skipnijcie', 'ale gowno' 'ale gówno', 'skip pls'];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
