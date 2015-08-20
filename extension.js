@@ -161,7 +161,7 @@
         voteSkipLimit: 10,
         historySkip: true,
         timeGuard: true,
-        maximumSongLength: 12,
+        maximumSongLength: 10,
         autodisable: false,
         commandCooldown: 30,
         usercommandsEnabled: true,
