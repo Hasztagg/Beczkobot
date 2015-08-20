@@ -93,7 +93,7 @@
                 }
             }
         };
-        
+/*        
         bot.commands._nightmodeon = {
             command: 'nightmodeon',
             rank: 'mod',
@@ -105,7 +105,7 @@
                     bot.settings.maximumSongLength = !bot.settings.maximumSongLength;
                     bot.settings.voteSkip = !bot.settings.voteSkip;
                     bot.settings.voteSkipLimit = !bot.settings.voteSkipLimit;
-                    var tempstra = "TimeGuard ustawiono na: " + bot.settings.maximumSongLength 70 ', Voteskip: 'bot.settings.voteSkip + ', Limit skipa: 'bot.settings.voteSkipLimit 3';
+                    var tempstra = "TimeGuard ustawiono na: " + bot.settings.maximumSongLength + ', G\u0142os do skipa: ' + bot.settings.voteSkip + ', Limit meh: ' + bot.settings.voteSkipLimit '3';
                     API.sendChat(tempstra);
                 }
             }
@@ -126,7 +126,7 @@
                 }
             }
         };
-
+*/
         // Load the chat package again to account for any changes
         bot.loadChat();
 
