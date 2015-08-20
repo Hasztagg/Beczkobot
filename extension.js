@@ -17,22 +17,13 @@
         bot.retrieveSettings();
 
         //Extend the bot here, either by calling another function or here directly.
-/*
+
         // You can add more spam words to the bot.
         var spamWords = ['ban', '@Beczkobot', 'skipuj', 'skipnijcie', 'ale gowno', 'ale gówno', 'skip pls', '!cookie @Beczkobot'];
         for (var i = 0; i < spamWords.length; i++) {
           window.bot.chatUtilities.spam.push(spamWords[i]);
         }
-*/        
-        var deletedWords = ['ban', '@Beczkobot', 'skipuj', 'skipnijcie', 'ale gowno', 'ale gówno', 'skip pls', '!cookie @Beczkobot'];
-        API.on(API.CHAT, function (data) {
-            for (var i = 0; i < deletedWords.length; i++) {
-                if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
-                    $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid });
-                    break;
-                };
-            }
-        });
+       
 
         // Example code for a bot command:
         bot.commands.baconCommand = {
