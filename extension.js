@@ -117,10 +117,9 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
-                    bot.settings.maximumSongLength = !bot.settings.maximumSongLength;
                     bot.settings.voteSkip = !bot.settings.voteSkip;
                     bot.settings.bouncerPlus = !bot.settings.bouncerPlus;
-                    var nightmode = "Bouncer+: " + bot.settings.bouncerPlus + ', G\u0142os do skipa: '+ bot.settings.voteSkip + '.';
+                    var nightmode = "Bouncer+: " + bot.settings.bouncerPlus + ', G\u0142os do skipa: ' + bot.settings.voteSkip +'.';
                     API.sendChat(nightmode);
                 }
             }
