@@ -2,10 +2,7 @@
 
     // Change this to your GitHub username so you don't have to modify so many things.
     var fork = "Hasztagg";
-    bot.commands.logoutCommand.rank = ‘cohost’;
-    bot.commands.botnameCommand.rank = ‘cohost’;
-    bot.commands.unbanCommand.rank = ‘manager’;
-    bot.commands.autoskipCommand.rank = ‘bouncer’;
+
     // Define our function responsible for extending the bot.
     function extend() {
         // If the bot hasn't been loaded properly, try again in 1 second(s).
