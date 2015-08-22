@@ -109,8 +109,8 @@
             }
         };
         
-        bot.commands._nightmodeon = {
-            command: 'nightmodeon',
+        bot.commands.nightmode = {
+            command: 'nightmode',
             rank: 'mod',
             type: 'exact',
             functionality: function(chat, cmd) {
@@ -120,28 +120,12 @@
                     bot.settings.maximumSongLength = !bot.settings.maximumSongLength;
                     bot.settings.voteSkip = !bot.settings.voteSkip;
                     bot.settings.bouncerPlus = !bot.settings.bouncerPlus;
-                    var nightmodeon = "Bouncer+: " + bot.settings.bouncerPlus + ', G\u0142os do skipa: ' + bot.settings.voteSkip + ';
-                    API.sendChat(nightmodeon);
+                    var nightmode = "Bouncer+: " + bot.settings.bouncerPlus + ', G\u0142os do skipa: ' + bot.settings.voteSkip + ';
+                    API.sendChat(nightmode);
                 }
             }
         };
         
-        bot.commands._nightmodeoff = {
-            command: 'nightmodeoff',
-            rank: 'mod',
-            type: 'exact',
-            functionality: function(chat, cmd) {
-                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
-                if (!bot.commands.executable(this.rank, chat)) return void(0);
-                else {
-                    bot.settings.maximumSongLength = !bot.settings.maximumSongLength;
-                    bot.settings.voteSkip = !bot.settings.voteSkip;
-                    bot.settings.bouncerPlus = !bot.settings.bouncerPlus;
-                    var nightmodeff = "Bouncer+: " + bot.settings.bouncerPlus - ', G\u0142os do skipa: ' + bot.settings.voteSkip - ';
-                    API.sendChat(nightmodeoff);
-                }
-            }
-        };
 
         // Load the chat package again to account for any changes
         bot.loadChat();
