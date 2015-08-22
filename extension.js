@@ -120,7 +120,7 @@
                     bot.settings.maximumSongLength = !bot.settings.maximumSongLength;
                     bot.settings.voteSkip = !bot.settings.voteSkip;
                     bot.settings.bouncerPlus = !bot.settings.bouncerPlus;
-                    var nightmode = "Bouncer+: " + bot.settings.bouncerPlus + ', G\u0142os do skipa: '+ bot.settings.voteSkip + ;
+                    var nightmode = "Bouncer+: " + bot.settings.bouncerPlus + ', G\u0142os do skipa: '+ bot.settings.voteSkip + '.';
                     API.sendChat(nightmode);
                 }
             }
