@@ -173,7 +173,7 @@
     "jointime": "\/me :information_source: [@%%NAMEFROM%%] @%%USERNAME%% jest w spo\u0142eczno\u015bci %%TIME%%.",
     "kickrank": "\/me :warning: [@%%NAME%%] nie mo\u017cesz u\u017cy\u0107 opcji \"kick\" na u\u017cytkowniku z t\u0105 sam\u0105 lub wy\u017csz\u0105 rang\u0105 ni\u017c ty.",
     "kick": "\/me :information_source: [@%%NAME%%], @%%USERNAME%% zosta\u0142e\u015b wyrzucony z spo\u0142eczno\u015bci na %%TIME%% minut.",
-    "kill": "\/me Wy/u0142\u0105czanie....:zzz:",
+    "kill": "\/me Wy\u0142\u0105czanie....:zzz:",
     "logout": "\/me :information_source: [@%%NAME%%] Wylogowano %%BOTNAME%%",
     "rouletteleave": "\/me :information_source: @%%NAME%% wyszed\u0142 z ruletki!",
     "songlink": "\/me :information_source: [@%%NAME%%] Link do aktualnej piosenki: %%LINK%%",
