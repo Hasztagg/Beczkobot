@@ -133,7 +133,7 @@
                 for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
                     $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid });
-                        API.sendChat("/me Sam jesteś zwis.");
+                        API.sendChat("/me @" + chat.un + " Sam jesteś zwis.");
                     break;
                 };
             }
