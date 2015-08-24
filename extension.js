@@ -47,7 +47,7 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    API.sendChat("/me :information_source: Lista dodatowych emotikon: http://git.io/v36w9"); 
+                    API.sendChat("/me :information_source: Lista dodatkowych emotikon: http://git.io/v36w9"); 
 
                 }
             }
