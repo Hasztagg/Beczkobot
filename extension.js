@@ -125,6 +125,20 @@
             }
         };
         
+    var _spam = [];
+     var deletedWords = [];
+        _spam = ['zwis'];  
+            deletedWords = _spam;
+                API.on(API.CHAT, function (data) {
+                for (var i = 0; i < deletedWords.length; i++) {
+                if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
+                    $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid });
+                        API.sendChat("/me Sam jesteś zwis.");
+                    break;
+                };
+            }
+        });
+        
 
         // Load the chat package again to account for any changes
         bot.loadChat();
