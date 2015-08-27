@@ -149,7 +149,7 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
                     var msg = chat.message;
-                    API.sendChat(subChat(basicBot.chat.powiedz, {msg});
+                    API.sendChat(subChat(basicBot.chat.powiedz, {msg}));
                 }
             }
         };
