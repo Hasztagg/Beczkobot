@@ -148,8 +148,8 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0);
                 if (!bot.commands.executable(this.rank, chat)) return void(0);
                 else {
-                    var msg = chat.message;
-                    API.sendChat(subChat(basicBot.chat.powiedz, {msg}));
+                    var tekst = msg.substring(cmd.length + 1).replace(/@/g, '');
+                    API.sendChat(subChat(tekst));
                 }
             }
         };
