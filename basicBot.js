@@ -1000,8 +1000,8 @@
                     if (basicBot.settings.smartSkip) {
                         setTimeout(function () {
                         return basicBot.roomUtilities.smartSkip();
-                    360000)}
-                    else {
+                    }, 360000);
+                        } else {
                         setTimeout(function () {
                             if (API.getMedia().cid !== newMedia.cid) {
                                 return void(0);
