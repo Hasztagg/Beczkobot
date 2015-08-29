@@ -1000,7 +1000,7 @@
                     if (basicBot.settings.smartSkip) {
                         setTimeout(function () {
                         return basicBot.roomUtilities.smartSkip();
-                    }, 360000) 
+                    360000)}
                     else {
                         setTimeout(function () {
                             if (API.getMedia().cid !== newMedia.cid) {
@@ -1011,7 +1011,6 @@
                         }, 360000);
                         API.sendChat("Min\u0119\u0142o 6 minut, pomijam...")
                     }
- 
                 }
             }, 2000);
             var format = obj.media.format;
