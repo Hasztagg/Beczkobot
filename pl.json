@@ -81,7 +81,7 @@
     "welcomeback": "\/me Witaj ponownie, @%%NAME%%",
     "songknown": "\/me :warning: @%%NAME%%, utw\u00f3r jest w historii.",
     "notavailable": "\/me :warning: @%%NAME%%, utw\u00f3r kt\u00f3ry chcia\u0142e\u015b pu\u015bci\u0107 nie by\u0142 dost\u0119pny.",
-    "timelimit": "\/me :warning: @%%NAME%%, tw\u00f3j utw\u00f3r jest d\u0142u\u017cszy ni\u017c %%MAXLENGTH%% minut\/y, pomijam...",
+    "timelimit": "\/me :warning: @%%NAME%%, tw\u00f3j utw\u00f3r jest za d\u0142ugi, zostanie on pomini\u0119ty po 6 minutach.",
     "permissionownsong": "\/me :information_source: :up: @%%NAME%% posiada uprawnienia aby gra\u0107 swoje w\u0142asne produkcje",
     "isblacklisted": "\/me :warning: Utw\u00f3r znajduje si\u0119 na %%BLACKLIST%% li\u015bcie. Pomijam...",
     "isopen": "\/me :information_source: :game_die: @djs Ruletka rozpocz\u0119ta! Wpisz !join aby do\u0142\u0105czy\u0107! (Wylosowana osoba zostanie przeniesiona na losowe miejsce w kolejce). :game_die:",
