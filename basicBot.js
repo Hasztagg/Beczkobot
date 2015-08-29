@@ -993,13 +993,22 @@
             var timeLimitSkip = setTimeout(function () {
                 if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 && !basicBot.room.roomevent) {
                     var name = obj.dj.username;
-                    API.sendChat(subChat(basicBot.chat.timelimit, {name: name, maxlength: basicBot.settings.maximumSongLength}));
-                    if (basicBot.settings.smartSkip){
+                    API.sendChat(subChat(basicBot.chat.timelimit, {
+                        name: name,
+                        maxlength: basicBot.settings.maximumSongLength
+                    }));
+                    if (basicBot.settings.smartSkip) {
                         return basicBot.roomUtilities.smartSkip();
+                    } else {
+                        setTimeout(function () {
+                            if (API.getMedia().cid !== newMedia.cid) {
+                                return void(0);
+                            } else {
+                                return API.moderateForceSkip();
+                            }
+                        }, 360000);
                     }
-                    else {
-                        return API.moderateForceSkip();
-                    }
+ 
                 }
             }, 2000);
             var format = obj.media.format;
