@@ -999,17 +999,19 @@
                     }));
                     if (basicBot.settings.smartSkip) {
                         setTimeout(function () {
-                        return basicBot.roomUtilities.smartSkip();
+                            API.sendChat("Min\u0119\u0142o 6 minut, pomijam...");
+                            return basicBot.roomUtilities.smartSkip();
                     }, 360000);
-                        } else {
+                    } else {
                         setTimeout(function () {
                             if (API.getMedia().cid !== newMedia.cid) {
                                 return void(0);
                             } else {
+                                API.sendChat("Min\u0119\u0142o 6 minut, pomijam...");
                                 return API.moderateForceSkip();
                             }
                         }, 360000);
-                        API.sendChat("Min\u0119\u0142o 6 minut, pomijam...")
+
                     }
                 }
             }, 2000);
