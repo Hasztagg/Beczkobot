@@ -172,7 +172,7 @@
         startupEmoji: false, // true or false
         autowoot: true,
         autoskip: false,
-        smartSkip: false,
+        smartSkip: true,
         cmdDeletion: true,
         maximumAfk: 120,
         afkRemoval: false,
