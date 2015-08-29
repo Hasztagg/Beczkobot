@@ -998,8 +998,10 @@
                         maxlength: basicBot.settings.maximumSongLength
                     }));
                     if (basicBot.settings.smartSkip) {
+                        setTimeout(function () {
                         return basicBot.roomUtilities.smartSkip();
-                    } else {
+                    }, 360000) 
+                    else {
                         setTimeout(function () {
                             if (API.getMedia().cid !== newMedia.cid) {
                                 return void(0);
@@ -1007,6 +1009,7 @@
                                 return API.moderateForceSkip();
                             }
                         }, 360000);
+                        API.sendChat("Min\u0119\u0142o 6 minut, pomijam...")
                     }
  
                 }
