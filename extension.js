@@ -224,13 +224,13 @@
         songstats: false,
         commandLiteral: "!",
         blacklists: {
-            NSFW: "https://rawgit.com/Hasztagg/basicBot-customization/master/blacklists/NSFWlist.json",
-            OP: "https://rawgit.com/Hasztagg/basicBot-customization/master/blacklists/OPlist.json",
-            BANNED: "https://rawgit.com/Hasztagg/basicBot-customization/master/blacklists/BANNEDlist.json"
+            NSFW: "https://rawgit.com/Hasztagg/Beczkobot/master/blacklists/NSFWlist.json",
+            OP: "https://rawgit.com/Hasztagg/Beczkobot/master/blacklists/OPlist.json",
+            BANNED: "https://rawgit.com/Hasztagg/Beczkobot/master/blacklists/BANNEDlist.jsonn"
         }
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Hasztagg/Beczkobot/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/Hasztagg/Beczkobot/master/Beczkobot.js", extend);
 
 }).call(this);
