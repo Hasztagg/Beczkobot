@@ -990,7 +990,7 @@
                 }
             }, 2000);
             var newMedia = obj.media;
-            var timeLimitSkip = setTimeout(function () {
+            var timeLimitSkip = setTimeout(function () { // dzięki Udyr za pomoc z timeoutem!
                 if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 && !basicBot.room.roomevent) {
                     var name = obj.dj.username;
                     API.sendChat(subChat(basicBot.chat.timelimit, {
