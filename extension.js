@@ -153,7 +153,24 @@
                 }
             }
         };
+/* WIP        
+        bot.commands.gonciarzCommand = { 
+            command: 'gonciarz',
+            rank: 'user', 
+            type: 'exact', 
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
+                if (!bot.commands.executable(this.rank, chat)) return void(0); 
+                else {
+                    var cytaty = ['test1', 'test2', 'test3'];
+                    var randomUser = Math.floor(Math.random() * crowd.length);
+                    Math.random
+                    API.sendChat("!motd"); 
 
+                }
+            }
+        };
+*/
         // Load the chat package again to account for any changes
         bot.loadChat();
 
