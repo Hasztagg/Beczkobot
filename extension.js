@@ -134,8 +134,7 @@
                 for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
                     $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid });
-                        var userzy = API.getUsers();
-                        API.sendChat("/me @" + chat.un + " Obrażasz Disa? :wat:");
+                        API.sendChat("/me Obrażasz Disa? :wat:");
                         // żeby z user bylo to jednak raka mam i nie umiem 
                     break;
                 };
@@ -155,7 +154,7 @@
                 }
             }
         };
-/* WIP        
+       
         bot.commands.gonciarzCommand = { 
             command: 'gonciarz',
             rank: 'user', 
@@ -165,14 +164,13 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
                     var cytaty = ['test1', 'test2', 'test3'];
-                    var randomUser = Math.floor(Math.random() * crowd.length);
-                    Math.random
-                    API.sendChat("!motd"); 
+                    var los = Math.floor(Math.random(cytaty) * crowd.length);
+                    API.sendChat(los); 
 
                 }
             }
         };
-*/
+
         // Load the chat package again to account for any changes
         bot.loadChat();
 
