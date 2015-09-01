@@ -164,9 +164,8 @@
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
                     var cytaty = ['test1', 'test2', 'test3'];
-                    var los = Math.floor(Math.random(cytaty) * crowd.length);
-                    API.sendChat(subChat({los});
-
+                    var los = Math.floor(Math.random(cytaty));
+                    API.sendChat(los);
                 }
             }
         };
@@ -243,7 +242,7 @@
         blacklists: {
             NSFW: "https://rawgit.com/Hasztagg/Beczkobot/master/blacklists/NSFWlist.json",
             OP: "https://rawgit.com/Hasztagg/Beczkobot/master/blacklists/OPlist.json",
-            BANNED: "https://rawgit.com/Hasztagg/Beczkobot/master/blacklists/BANNEDlist.jsonn"
+            BANNED: "https://rawgit.com/Hasztagg/Beczkobot/master/blacklists/BANNEDlist.json"
         }
     }));
 
