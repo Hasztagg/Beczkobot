@@ -165,7 +165,7 @@
                 else {
                     var cytaty = ['test1', 'test2', 'test3'];
                     var los = Math.floor(Math.random()*cytaty.length);
-                    API.sendChat(gifArray[randy].toString());
+                    API.sendChat(cytaty[los].toString());
                 }
             }
         };
