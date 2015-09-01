@@ -89,8 +89,8 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    var userzy = API.getUsers()
-                    API.sendChat("/me :information_source:" + "@" + chat.un + " Wpisz si\u0119 do teczki inwigilacji (wymaga do\u0142\u0105czenia do grupy) https:\/\/www.facebook.com\/groups\/beczkownicy.plugdj\/permalink\/512312038933480\/!"); 
+                    var userzy = API.getUsers();
+                    API.sendChat("/me :information_source:" + " @" + chat.un + " Wpisz si\u0119 do teczki inwigilacji (wymaga do\u0142\u0105czenia do grupy) https:\/\/www.facebook.com\/groups\/beczkownicy.plugdj\/permalink\/512312038933480\/!"); 
 
                 }
             }
@@ -133,8 +133,9 @@
                 API.on(API.CHAT, function (data) {
                 for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
+                    var userzy = API.getUsers();
                     $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid });
-                        API.sendChat("/me Obrażasz Disa? :wat:");
+                        API.sendChat("/me @" + chat.un + " Obrażasz Disa? :wat:");
                         // żeby z user bylo to jednak raka mam i nie umiem 
                     break;
                 };
