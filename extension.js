@@ -172,7 +172,8 @@
                     '"Dobre soki owocowe są jak dobre gry – im starsze, tym bardziej chce nam się rzygać na ich widok."',
                     '"Ucz się pilnie, zadawaj pytania, udzielaj odpowiedzi na tematy, o których nie masz pojęcia, a być może kiedyś zostaniesz YouTuberem."',
                     '"Demokracja działa tak długo, jak bydło myśli, że wybiera pasterza."',
-                    '"Czasem trzeba pomachać komuś miodem przed okiem, żeby pszczoły poleciały zarżnąć twojego przeciwnika..."'
+                    '"Czasem trzeba pomachać komuś miodem przed okiem, żeby pszczoły poleciały zarżnąć twojego przeciwnika..."',
+                    '"To jest Zapytaj Beczkę, krótka piłka - wódka, karabin, kokaina i siłka"'
                     ];
                     var los = Math.floor(Math.random()*cytaty.length);
                     API.sendChat(cytaty[los].toString());
