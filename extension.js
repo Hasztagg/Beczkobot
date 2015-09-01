@@ -163,7 +163,17 @@
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    var cytaty = ['test1', 'test2', 'test3'];
+                    var cytaty = [
+                    '"Inwestycje, inwestycje, inwestycje."',
+                    '"Bumcfksz!"',
+                    '"Brykiety, brykiety"',
+                    '"Z wielkim przemytem wiąże się wielka odpowiedzialność."',
+                    '"Ktoś jest kimś, kiedy nie jest nikim"',
+                    '"Dobre soki owocowe są jak dobre gry – im starsze, tym bardziej chce nam się rzygać na ich widok."',
+                    '"Ucz się pilnie, zadawaj pytania, udzielaj odpowiedzi na tematy, o których nie masz pojęcia, a być może kiedyś zostaniesz YouTuberem."',
+                    '"Demokracja działa tak długo, jak bydło myśli, że wybiera pasterza."',
+                    '"Czasem trzeba pomachać komuś miodem przed okiem, żeby pszczoły poleciały zarżnąć twojego przeciwnika..."'
+                    ];
                     var los = Math.floor(Math.random()*cytaty.length);
                     API.sendChat(cytaty[los].toString());
                 }
