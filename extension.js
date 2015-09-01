@@ -133,8 +133,8 @@
                 API.on(API.CHAT, function (data) {
                 for (var i = 0; i < deletedWords.length; i++) {
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
-                    var userzy = API.getUsers();
                     $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid });
+                        var userzy = API.getUsers();
                         API.sendChat("/me @" + chat.un + " Obrażasz Disa? :wat:");
                         // żeby z user bylo to jednak raka mam i nie umiem 
                     break;
