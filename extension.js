@@ -84,12 +84,13 @@
         bot.commands.teczkaCommand = { 
             command: 'teczka',
             rank: 'user', 
-            type: 'exact', 
+            type: 'startsWith', 
             functionality: function (chat, cmd) {
                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
                 if (!bot.commands.executable(this.rank, chat)) return void(0); 
                 else {
-                    API.sendChat("/me :information_source: Wpisz si\u0119 do teczki inwigilacji (wymaga do\u0142\u0105czenia do grupy) https:\/\/www.facebook.com\/groups\/beczkownicy.plugdj\/permalink\/512312038933480\/!"); 
+                    var userzy = API.getUsers()
+                    API.sendChat("/me :information_source:" + "@" + chat.un + " Wpisz si\u0119 do teczki inwigilacji (wymaga do\u0142\u0105czenia do grupy) https:\/\/www.facebook.com\/groups\/beczkownicy.plugdj\/permalink\/512312038933480\/!"); 
 
                 }
             }
