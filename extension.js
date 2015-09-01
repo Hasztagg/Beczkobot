@@ -135,7 +135,7 @@
                 if (data.message.toLowerCase().indexOf(deletedWords[i]) > -1) {
                     $.ajax({ type: 'DELETE', url: '/_/chat/' + data.cid });
                         API.sendChat("/me Obrażasz Disa? :wat:");
-                        // żeby z user bylo to jednak raka mam i nie umiem 
+
                     break;
                 };
             }
