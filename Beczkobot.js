@@ -1005,6 +1005,7 @@
                             setTimeout (function () {
                                 API.sendChat("Min\u0119\u0142o 6 minut, pomijam...");
                                 return basicBot.roomUtilities.smartSkip();
+                            }
                     }, 360000);
                     } else {
                         setTimeout(function () {
