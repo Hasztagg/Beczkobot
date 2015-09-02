@@ -997,7 +997,7 @@
                         name: name,
                         maxlength: basicBot.settings.maximumSongLength
                     }));
-                    if (basicBot.settings.smartSkip) {
+                    if ((basicBot.settings.smartSkip) || (API.getMedia().cid !== newMedia.cid)) {
                         setTimeout(function () {
                             API.sendChat("Min\u0119\u0142o 6 minut, pomijam...");
                             return basicBot.roomUtilities.smartSkip();
