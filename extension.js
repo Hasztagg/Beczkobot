@@ -128,7 +128,7 @@
         
     var _spam = [];
      var deletedWords = [];
-        _spam = ['zwis', 'zvvis', 'ZWIS','ZVVIS'];  
+        _spam = [' zwis', 'zvvis', 'ZWIS','ZVVIS'];  
             deletedWords = _spam;
                 API.on(API.CHAT, function (data) {
                 for (var i = 0; i < deletedWords.length; i++) {
