@@ -999,12 +999,12 @@
                     }));
                     if (basicBot.settings.smartSkip) {
                         if (API.getMedia().cid !== newMedia.cid) {
-                                return void(0);                      
-                      } else
-                        setTimeout(function () {
-                            API.sendChat("Min\u0119\u0142o 6 minut, pomijam...");
-                            return basicBot.roomUtilities.smartSkip();
-                    }, 120000);
+                            return void(0);
+                        } else {
+                            setTimeout(function () {
+                                API.sendChat("Min\u0119\u0142o 6 minut, pomijam...");
+                                return basicBot.roomUtilities.smartSkip();
+                    }, 360000);
                     } else {
                         setTimeout(function () {
                             if (API.getMedia().cid !== newMedia.cid) {
@@ -1013,7 +1013,7 @@
                                 API.sendChat("Min\u0119\u0142o 6 minut, pomijam...");
                                 return API.moderateForceSkip();
                             }
-                        }, 120000);
+                        }, 360000);
 
                     }
                 }
@@ -1049,7 +1049,7 @@
                         }
                     });
                 }
-            2000);
+            }, 2000);
             clearTimeout(historySkip);
             if (basicBot.settings.historySkip) {
                 var alreadyPlayed = false;
