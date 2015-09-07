@@ -998,8 +998,7 @@
                         maxlength: basicBot.settings.maximumSongLength
                     }));
                     if (basicBot.settings.smartSkip) {
-                        if (basicBot.settings.smartSkip) {
-                            if (API.getMedia().cid !== newMedia.cid) {
+                        if (API.getMedia().cid !== newMedia.cid) {
                                 return void(0);                      
                       } else
                         setTimeout(function () {
