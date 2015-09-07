@@ -241,7 +241,7 @@
         etaRestriction: false,
         welcome: true,
         opLink: null,
-        rulesLink: "http://tnij.org/regulamin_beczki | English rules here: http:\/\/pastebin.com\/sTJbWHMd",
+        rulesLink: "http://tiny.cc/regulamin_beczki | English rules here: http:\/\/pastebin.com\/sTJbWHMd",
         themeLink: null,
         fbLink: "http://www.facebook.com/groups/beczkownicy.plugdj/",
         youtubeLink: "https://youtube.com/TheUwagaPies https://youtube.com/wybuchajacebeczki oraz https://youtube.com/TheBeeczka",
