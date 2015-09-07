@@ -77,7 +77,7 @@
     "greyuser": ":warning: Tylko bramkarze wzwy\u017c mog\u0119 uruchomi\u0107 bota.",
     "bouncer": ":warning: Bot nie mo\u017ce przenosi\u0107 ludzi w kolejce gdy jest uruchomiony jako bramkarz.",
     "online": "\/me %%BOTNAME%% v%%VERSION%% online!",
-    "welcome": "\/me Witaj @%%NAME%%, zajrzyj do zasad (http://tnij.org/regulamin_beczki) i mi\u0142ej zabawy!",
+    "welcome": "\/me Witaj @%%NAME%%, zajrzyj do zasad (http://tiny.cc/regulamin_beczki) i mi\u0142ej zabawy!",
     "welcomeback": "\/me Witaj ponownie, @%%NAME%%",
     "songknown": "\/me :warning: @%%NAME%%, utw\u00f3r jest w historii.",
     "notavailable": "\/me :warning: @%%NAME%%, utw\u00f3r kt\u00f3ry chcia\u0142e\u015b pu\u015bci\u0107 nie by\u0142 dost\u0119pny.",
