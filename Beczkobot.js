@@ -989,36 +989,36 @@
                     }
                 }
             }, 2000);
-            var newMedia = obj.media;
-            var timeLimitSkip = setTimeout(function () { // dzięki Udyr za pomoc z timeoutem!
-                if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 && !basicBot.room.roomevent) {
-                    var name = obj.dj.username;
-                    API.sendChat(subChat(basicBot.chat.timelimit, {
-                        name: name,
-                        maxlength: basicBot.settings.maximumSongLength
-                    }));
-                    if (basicBot.settings.smartSkip) {
-                        if (API.getMedia().cid !== newMedia.cid) {
-                            return void(0);
-                        } else {
-                            setTimeout(function () {
-                                API.sendChat("Min\u0119\u0142o 6 minut, pomijam...");
-                                return basicBot.roomUtilities.smartSkip();
-                            }
-                    }, 360000);
-                    } else {
-                        setTimeout(function () {
-                            if (API.getMedia().cid !== newMedia.cid) {
-                                return void(0);
-                            } else {
-                                API.sendChat("Min\u0119\u0142o 6 minut, pomijam...");
-                                return API.moderateForceSkip();
-                            }
-                        }, 360000);
-
-                    }
-                }
-            }, 2000);
+            //sorry za zrobienie lekkiego balaganu
+  var newMedia = obj.media;
+  var timeLimitSkip = setTimeout(function () {
+      if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 && !basicBot.room.roomevent) {
+          var name = obj.dj.username;
+          API.sendChat(subChat(basicBot.chat.timelimit, {
+              name: name,
+              maxlength: basicBot.settings.maximumSongLength
+          }));
+          if (basicBot.settings.smartSkip) {
+              setTimeout(function () {
+                  if (API.getMedia().cid !== newMedia.cid) {
+                      return void(0);
+                  } else {
+                      API.sendChat("Min\u0119\u0142o 6 minut, pomijam...");
+                      return basicBot.roomUtilities.smartSkip();
+                  }
+              }, 360000);
+          }
+      } else {
+          setTimeout(function () {
+              if (API.getMedia().cid !== newMedia.cid) {
+                  return void(0);
+              } else {
+                  API.sendChat("Min\u0119\u0142o 6 minut, pomijam...");
+                  return API.moderateForceSkip();
+              }
+          }, 360000);
+      }
+  }, 2000);
             var format = obj.media.format;
             var cid = obj.media.cid;
             var naSkip = setTimeout(function () {
