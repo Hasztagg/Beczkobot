@@ -1050,7 +1050,7 @@
                         }
                     });
                 }
-            }, 2000);
+            2000);
             clearTimeout(historySkip);
             if (basicBot.settings.historySkip) {
                 var alreadyPlayed = false;
