@@ -1,5 +1,5 @@
 /**
- *Copyright 2014 Yemasthui
+ *Copyright 2015 bscBot
  *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
  *This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
  */
@@ -231,12 +231,12 @@
         return str;
     };
 
-    var botCreator = "Matthew (Yemasthui)";
+    var botCreator = "The Basic Team";
     var botMaintainer = "Benzi"
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.8.13",
+        version: "2.8.14",
         status: false,
         name: "basicBot",
         loggedInID: null,
@@ -3232,8 +3232,8 @@
                         */
 
                         // This is a more efficient solution
-                        if (msg.length > 241){
-                            var split = msg.match(/.{1,241}/g);
+                        if (msg.length > 250){
+                            var split = msg.match(/.{1,250}/g);
                             for (var i = 0; i < split.length; i++) {
                                 var func = function(index) {
                                     setTimeout(function() {
