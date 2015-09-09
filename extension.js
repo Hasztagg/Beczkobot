@@ -152,14 +152,14 @@ jak nie to ban */
                 else {
                     API.sendChat("/me Orki");
                     setTimeout(function () {
-                      API.sendChat("/me Orki z Majorki")
+                      API.sendChat("/me Orki z Majorki");
                     }, 2000);
                     setTimeout(function () {
-                      API.sendChat("/me Orki z Pooznaniaa")
+                      API.sendChat("/me Orki z Pooznaniaa");
                     }, 2000);
                     setTimeout(function () {
-                      API.sendChat("/me I ze Stalowej Wooolii")
-                  }, 2000);
+                      API.sendChat("/me I ze Stalowej Wooolii");
+                    }, 2000);
                 }
               }
             };
