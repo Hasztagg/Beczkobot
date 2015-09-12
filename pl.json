@@ -219,5 +219,5 @@
     "thorNotClose": "\/me @%%NAME%%, nie jesteś godzien aby podejść do młota!",
     "thorcd": "\/me @%%NAME%% możesz spróbować podnieść młot za %%TIME%% minut.",
     "thorWorthy": "\/me @%%NAME%% jesteś godzien młota :hammer:, gratulacje!",
-    "thorNotWorthy": "\/me /me @%%NAME%% nie jesteś godzien młota."
+    "thorNotWorthy": "\/me @%%NAME%% nie jesteś godzien młota."
 }
