@@ -3347,12 +3347,6 @@
                                   if (thorCd == false)
                                       basicBot.room.usersUsedThor.splice(indexArrUsedThor, 1);
                               }
-
-                              if (thorCd == false || usedThor == false) {
-                                  var user = {id: id, time: Date.now()};
-                                  basicBot.room.usersUsedThor.push(user);
-                              }
-                          }
                 if ((msg.indexOf(thorCd) > -1) && chat.uid === basicBot.loggedInID) {
                     setTimeout(function (id) {
                         API.moderateDeleteChat(id);
@@ -3360,7 +3354,7 @@
                     return true;
                 }
                 return false;
-            }
+            },
                           if (isDj && worthy == true) {
                               return API.sendChat(subChat(basicBot.chat.thorWorthy, {name: from}));
                           } else if (isDj && worthy == false) {
