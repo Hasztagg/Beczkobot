@@ -3360,7 +3360,7 @@
                     return true;
                 }
                 return false;
-            },
+            }
                           if (isDj && worthy == true) {
                               return API.sendChat(subChat(basicBot.chat.thorWorthy, {name: from}));
                           } else if (isDj && worthy == false) {
