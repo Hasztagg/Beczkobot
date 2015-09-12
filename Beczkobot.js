@@ -3354,7 +3354,7 @@
                     return true;
                 }
                 return false;
-            },
+            }
                           if (isDj && worthy == true) {
                               return API.sendChat(subChat(basicBot.chat.thorWorthy, {name: from}));
                           } else if (isDj && worthy == false) {
@@ -3368,12 +3368,12 @@
 
                           if (worthy) {
                              if (API.getWaitListPosition(id) != 0)
-+                            basicBot.userUtilities.moveUser(id, 1, false);
-+                            API.sendChat(subChat(basicBot.chat.thorWorthy, {name: from}));
+                                basicBot.userUtilities.moveUser(id, 1, false);
+                                API.sendChat(subChat(basicBot.chat.thorWorthy, {name: from}));
                           } else {
                             if (API.getWaitListPosition(id) != djlist.length - 1)
-+                            basicBot.userUtilities.moveUser(id, djlist.length, false);
-+                            API.sendChat(subChat(basicBot.chat.thorNotWorthy, {name: from}));
+                                basicBot.userUtilities.moveUser(id, djlist.length, false);
+                                API.sendChat(subChat(basicBot.chat.thorNotWorthy, {name: from}));
                           }
                       }
                      }
