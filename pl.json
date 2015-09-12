@@ -216,8 +216,8 @@
     "website": "\/me :information_source: Zapraszamy do odwiedzenia naszych grup na facebooku: %%LINK%%",
     "youtube": "\/me :information_source: Subskrybuj naszego mentora: %%LINK%%",
     "songstatistics": "\/me %%ARTIST%% - %%TITLE%%: %%WOOTS%%W\/%%GRABS%%G\/%%MEHS%%M.",
-    "thorNotClose": "\/me @%%NAME%%, you're not worthy of getting close to the hammer!",
-    "thorcd": "\/me @%%NAME%% you can try to lift the hammer in %%TIME%% minutes.",
-    "thorWorthy": "\/me @%%NAME%% you're worthy of the hammer :hammer:, congratulations!",
-    "thorNotWorthy": "\/me @%%NAME%% you're not worthy of the hammer."
+    "thorNotClose": "\/me @%%NAME%%, nie jesteś godzien aby podejść do młota!",
+    "thorcd": "\/me @%%NAME%% możesz spróbować podnieść młot za %%TIME%% minut.",
+    "thorWorthy": "\/me @%%NAME%% jesteś godzien młota :hammer:, gratulacje!",
+    "thorNotWorthy": "\/me /me @%%NAME%% nie jesteś godzien młota."
 }
