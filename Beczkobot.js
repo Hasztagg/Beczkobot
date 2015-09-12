@@ -3353,7 +3353,14 @@
                                   basicBot.room.usersUsedThor.push(user);
                               }
                           }
-
+                if ((msg.indexOf(thorCd) > -1) && chat.uid === basicBot.loggedInID) {
+                    setTimeout(function (id) {
+                        API.moderateDeleteChat(id);
+                    }, 5 * 1000, chat.cid);
+                    return true;
+                }
+                return false;
+            },
                           if (isDj && worthy == true) {
                               return API.sendChat(subChat(basicBot.chat.thorWorthy, {name: from}));
                           } else if (isDj && worthy == false) {
