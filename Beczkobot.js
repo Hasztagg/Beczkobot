@@ -3304,7 +3304,7 @@
                     }
                 }
             },
-
+            
             thorCommand: {
               command: 'thor',
               rank: 'user',
@@ -3366,7 +3366,7 @@
                           }
 
                           if (worthy) {
-                             if (API.getWaitListPosition(id) != 0)
+                            if (API.getWaitListPosition(id) != 0)
                             basicBot.userUtilities.moveUser(id, 1, false);
                             API.sendChat(subChat(basicBot.chat.thorWorthy, {name: from}));
                           } else {
@@ -3375,9 +3375,11 @@
                             API.sendChat(subChat(basicBot.chat.thorNotWorthy, {name: from}));
                           }
                       }
-                     }
+                    }
                 }
             },
+
+            
             timeguardCommand: {
                 command: 'timeguard',
                 rank: 'bouncer',
