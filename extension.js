@@ -241,7 +241,7 @@ jak nie to ban */
         autodisable: false,
         commandCooldown: 30,
         usercommandsEnabled: true,
-        thorCommand: true,
+        thorCommand: false,
         thorInterval: 10,
         skipPosition: null,
         skipReasons: [
