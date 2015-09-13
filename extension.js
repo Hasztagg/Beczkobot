@@ -241,6 +241,8 @@ jak nie to ban */
         autodisable: false,
         commandCooldown: 30,
         usercommandsEnabled: true,
+        thorCommand: true,
+        thorInterval: 10,
         skipPosition: null,
         skipReasons: [
             ["niemuzyka", "Utw\u00f3r, kt\u00f3ry pu\u015bci\u0142e\u015b nie jest muzyk\u0105. "],
