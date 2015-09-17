@@ -233,8 +233,7 @@
 
     var botCreator = "The Basic Team";
     var botMaintainer = "Benzi"
-    //tyle zmian zrobilismy ze dodam nasze ID :) 
-    var botCreatorIDs = ["3851534", "4105209", "6598771", "6425281"];
+    var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
         version: "2.8.15",
