@@ -183,7 +183,7 @@
     "lockguardtime": "\/me :information_source: [@%%NAME%%] The stra\u017cnik blokady jest ustawiony %%TIME%% minut.",
     "maxlengthtime": "\/me :information_source: [@%%NAME%%] Maksymalny czas trawania utworu ustawiony na %%TIME%% minut.",
     "motdset": "\/me :information_source: Wiadomo\u015b\u0107 dnia ustawiono na: %%MSG%%",
-    "motdintervalset": "\/me :information_source: Wiadomo\u015b\u0107 dnia b\u0119dzie powtarzana co %%INTERVAL%%.",
+    "motdintervalset": "\/me :information_source: Wiadomo\u015b\u0107 dnia b\u0119dzie powtarzana co %%INTERVAL%% utworów.",
     "currentbotname": "\/me :information_source: Nazwa bota aktualnie ustawiona na: %%BOTNAME%%",
     "botnameset": "\/me :information_source: Nazwa bota aktualnie ustawiona na: %%BOTNAME%%",
     "addbotwaitlist": "\/me :warning: @%%NAME%%, prosz\u0119, nie pr\u00f3buj dodawa\u0107 mnie do listy oczekiwania.",
