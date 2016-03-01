@@ -258,7 +258,7 @@ jak nie to ban */
         afkRankCheck: "user",
         motdEnabled: false,
         motdInterval: 2,
-        motd: ["Witamy wszystkie beczki, babeczki i nie beczki na ponownie powstałym plugu! Sprawdź regulamin tu: http://tiny.cc/regulaminbeczki Ostrożnie z dzieleniem się informacją o działającym plugu, serwery mogą w każdej chwili paść"],
+        motd: "Zapraszamy na Discorda Beczkowników! http://discord.me/beczkownicyofficial",
         filterChat: true,
         etaRestriction: false,
         welcome: true,
