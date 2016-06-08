@@ -110,6 +110,20 @@
             }
         };
         
+        bot.commands.discordKomenda = {
+            command: 'discord', 
+            rank: 'user', 
+            type: 'exact', 
+            functionality: function (chat, cmd) {
+                if (this.type === 'exact' && chat.message.length !== cmd.length) return void(0); 
+                if (!bot.commands.executable(this.rank, chat)) return void(0); 
+                else {
+                    API.sendChat("/me :information_source: Zapraszamy na Discorda Beczkowników! http://discord.me/beczkownicyofficial"); 
+
+                }
+            }
+        };
+        
         bot.commands.nightmode = {
             command: 'nightmode',
             rank: 'manager',
