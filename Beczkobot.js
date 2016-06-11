@@ -34,7 +34,7 @@
     // This socket server is used solely for statistical and troubleshooting purposes.
     // This server may not always be up, but will be used to get live data at any given time.
 
-    var socket = function () {
+    /*var socket = function () {
         function loadSocket() {
             SockJS.prototype.msg = function(a){this.send(JSON.stringify(a))};
             sock = new SockJS('https://benzi.io:4964/socket');
@@ -67,7 +67,7 @@
         };
         var data = {users:API.getUsers(),userinfo:API.getUser(),room:location.pathname,basicBotSettings:basicBotSettings,basicBotRoom:basicBotRoom,basicBotInfo:basicBotInfo};
         return sock.msg(data);
-    };
+    };*/
 
     var storeToStorage = function () {
         localStorage.setItem("basicBotsettings", JSON.stringify(basicBot.settings));
@@ -236,7 +236,7 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "2.8.15",
+        version: "2.8.16",
         status: false,
         name: "basicBot",
         loggedInID: null,
@@ -741,22 +741,22 @@
                 }, 1000, id);
             },
             changeDJCycle: function () {
-                var toggle = $(".cycle-toggle");
-                if (toggle.hasClass("disabled")) {
-                    toggle.click();
-                    if (basicBot.settings.cycleGuard) {
-                        basicBot.room.cycleTimer = setTimeout(function () {
-                            if (toggle.hasClass("enabled")) toggle.click();
-                        }, basicBot.settings.cycleMaxTime * 60 * 1000);
-                    }
-                }
-                else {
-                    toggle.click();
-                    clearTimeout(basicBot.room.cycleTimer);
-                }
-
-                // TODO: Use API.moderateDJCycle(true/false)
-            },
+                $.getJSON('/_/rooms/state', function(data) {
+                    if (data.data[0].booth.shouldCycle) { // checks "" "shouldCycle": true "" if its true
+                        API.moderateDJCycle(false); // Disables the DJ Cycle 
+                        clearTimeout(basicBot.room.cycleTimer); // Clear the cycleguard timer
+                    } else { // If cycle is already disable; enable it
+                        if (basicBot.settings.cycleGuard) { // Is cycle guard on?
+                        API.moderateDJCycle(true); // Enables DJ cycle  
+                        basicBot.room.cycleTimer = setTimeout(function () {  // Start timer
+                            API.moderateDJCycle(false); // Disable cycle
+                        }, basicBot.settings.maximumCycletime * 60 * 1000); // The time
+                        } else { // So cycleguard is not on? 
+                         API.moderateDJCycle(true); // Enables DJ cycle   
+                        }
+                    };
+                });
+            }, 
             intervalMessage: function () {
                 var interval;
                 if (basicBot.settings.motdEnabled) interval = basicBot.settings.motdInterval;
@@ -1095,7 +1095,7 @@
                 }, remaining + 5000);
             }
             storeToStorage();
-            sendToSocket();
+            //sendToSocket();
         },
         eventWaitlistupdate: function (users) {
             if (users.length < 50) {
@@ -1367,7 +1367,7 @@
             basicBot.connectAPI();
             API.moderateDeleteChat = function (cid) {
                 $.ajax({
-                    url: "https://plug.dj/_/chat/" + cid,
+                    url: "/_/chat/" + cid,
                     type: "DELETE"
                 })
             };
@@ -1386,7 +1386,7 @@
                         kill();
                     }, 1000);
                     if (basicBot.settings.roomLock){
-                        window.location = 'https://plug.dj' + basicBot.room.name;
+                        window.location = basicBot.room.name;
                     }
                     else {
                         clearInterval(Check);
@@ -1459,7 +1459,7 @@
             }
             API.chatLog('Avatars capped at ' + basicBot.settings.startupCap);
             API.chatLog('Volume set to ' + basicBot.settings.startupVolume);
-            socket();
+            //socket();
             loadChat(API.sendChat(subChat(basicBot.chat.online, {botname: basicBot.settings.botName, version: basicBot.version})));
         },
         commands: {
@@ -2471,7 +2471,7 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         storeToStorage();
-                        sendToSocket();
+                        //sendToSocket();
                         API.sendChat(basicBot.chat.kill);
                         basicBot.disconnectAPI();
                         setTimeout(function () {
@@ -2912,7 +2912,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        sendToSocket();
+                        //sendToSocket();
                         storeToStorage();
                         basicBot.disconnectAPI();
                         setTimeout(function () {
@@ -2932,7 +2932,7 @@
                     if (!basicBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         API.sendChat(basicBot.chat.reload);
-                        sendToSocket();
+                        //sendToSocket();
                         storeToStorage();
                         basicBot.disconnectAPI();
                         kill();
@@ -3265,17 +3265,29 @@
                         if (msg.length === cmd.length) return API.sendChat(subChat(basicBot.chat.nouserspecified, {name: chat.un}));
                         var firstSpace = msg.indexOf(' ');
                         var lastSpace = msg.lastIndexOf(' ');
-                        var name1 = msg.substring(cmd.length + 2, lastSpace);
-                        var name2 = msg.substring(lastSpace + 2);
+                        var name1 = msg.split('@')[1].trim();
+                        var name2 = msg.split('@')[2].trim();
                         var user1 = basicBot.userUtilities.lookupUserName(name1);
                         var user2 = basicBot.userUtilities.lookupUserName(name2);
                         if (typeof user1 === 'boolean' || typeof user2 === 'boolean') return API.sendChat(subChat(basicBot.chat.swapinvalid, {name: chat.un}));
                         if (user1.id === basicBot.loggedInID || user2.id === basicBot.loggedInID) return API.sendChat(subChat(basicBot.chat.addbottowaitlist, {name: chat.un}));
                         var p1 = API.getWaitListPosition(user1.id) + 1;
                         var p2 = API.getWaitListPosition(user2.id) + 1;
-                        if (p1 < 0 || p2 < 0) return API.sendChat(subChat(basicBot.chat.swapwlonly, {name: chat.un}));
+                        if (p1 < 0 && p2 < 0) return API.sendChat(subChat(basicBot.chat.swapwlonly, {name: chat.un}));
                         API.sendChat(subChat(basicBot.chat.swapping, {'name1': name1, 'name2': name2}));
-                        if (p1 < p2) {
+                        if (p1 === -1){
+                            API.moderateRemoveDJ(user2.id);
+                            setTimeout(function (user1, p2) {
+                                basicBot.userUtilities.moveUser(user1.id, p2, true);
+                            }, 2000, user1, p2);
+                        }
+                        else if (p2 === -1){
+                            API.moderateRemoveDJ(user1.id);
+                            setTimeout(function (user2, p1) {
+                                basicBot.userUtilities.moveUser(user2.id, p1, true);
+                            }, 2000, user2, p1);
+                        }
+                        else if (p1 < p2) {
                             basicBot.userUtilities.moveUser(user2.id, p1, false);
                             setTimeout(function (user1, p2) {
                                 basicBot.userUtilities.moveUser(user1.id, p2, false);
