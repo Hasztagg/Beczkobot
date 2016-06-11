@@ -242,7 +242,7 @@
         loggedInID: null,
         scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
-        chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+        chatLink: "https://rawgit.com/Hasztagg/Beczkobot/master/pl.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -250,7 +250,7 @@
         settings: {
             botName: "basicBot",
             language: "english",
-            chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+            chatLink: "https://rawgit.com/Hasztagg/Beczkobot/master/pl.json",
             scriptLink: "https://rawgit.com/Yemasthui/basicBot/master/basicBot.js",
             roomLock: false, // Requires an extension to re-load the script
             startupCap: 1, // 1-200
@@ -3221,9 +3221,9 @@
 
                         /*
                         // least efficient way to go about this, but it works :)
-                        if (msg.length > 256){
-                            firstpart = msg.substr(0, 256);
-                            secondpart = msg.substr(256);
+                        if (msg.length > 250){
+                            firstpart = msg.substr(0, 250);
+                            secondpart = msg.substr(250);
                             API.sendChat(firstpart);
                             setTimeout(function () {
                                 API.sendChat(secondpart);
