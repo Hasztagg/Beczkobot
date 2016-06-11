@@ -227,7 +227,7 @@ jak nie to ban */
     localStorage.setItem("basicBotsettings", JSON.stringify({
         botName: "Beczkobot",
         language: "polish",
-        chatLink: "https://www.dropbox.com/s/svq1cu6w5ucioso/pl.json?dl=0",
+        chatLink: "https://dl.dropboxusercontent.com/s/svq1cu6w5ucioso/pl.json",
         scriptLink: "https://rawgit.com/Hasztagg/Beczkobot/master/basicBot.js",
         roomLock: false, // Requires an extension to re-load the script
         startupCap: 1, // 1-200
