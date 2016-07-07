@@ -188,7 +188,7 @@ jak nie to ban */
 			return void(0);
 		else {
 			API.moderateDeleteChat(chat.cid);
-			API.sendChat("[@" + chat.un + "] " + chat.message.substr(cmd.length + 1));
+			API.sendChat(chat.message.substr(cmd.length + 1)); //Panie kierowco. Mówisz masz. 
 		}
 	}
 };
