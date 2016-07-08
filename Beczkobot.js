@@ -233,7 +233,7 @@
 
     var botCreator = "The Basic Team";
     var botMaintainer = "Benzi"
-    var botCreatorIDs = ["3851534", "4105209"];
+    var botCreatorIDs = ["3851534", "4105209", "6425281"];
 
     var basicBot = {
         version: "2.8.16",
@@ -3781,6 +3781,6 @@
             }
         }
     };
-
+ //może się nie zorientuje Kappa 
     loadChat(basicBot.startup);
 }).call(this);
