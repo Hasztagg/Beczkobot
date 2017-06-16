@@ -1,0 +1,60 @@
+{
+    "room": "Beczkownicy Zapytaj Beczke",
+    "author": "Hasztagg",
+    "icon": null,
+    "css": "https://dl.dropboxusercontent.com/s/ms01hwkun3n9shm/style.css",
+    "rules": {
+        "allowAutorespond": true,
+        "allowAutowoot": true,
+        "allowAutojoin": false,
+        "allowAutograb": true,
+        "allowSmartVote": true,
+        "allowEmotes": true,
+        "allowShowingMehs": false,
+        "forceSmartVote": false
+    },
+    "ccc": {
+        "admin": "#42A5DC",
+        "ambassador": "#84B423",
+        "host": "null",
+        "cohost": "#3980E4",
+        "manager": "null",
+        "bouncer": "#14ffa2",
+        "rdj": "#5DB4FF",
+        "subscriber": null,
+        "friend": null,
+        "user": null
+    },
+    "images": {
+        "background": null,
+        "playback": null,
+        "admin": "https://cdn.radiant.dj/rcs/icons/radiant/admin.png",
+        "ambassador": "https://cdn.radiant.dj/rcs/icons/radiant/ambassador.png",
+        "host": "http://i.imgur.com/tcwmla4.png",
+        "cohost": "http://i.imgur.com/bZ37wsM.png", 
+        "manager": "http://i.imgur.com/iEuTZZe.png",
+        "bouncer":  "http://i.imgur.com/akfF6ta.png",
+        "rdj": "https://cdn.radiant.dj/rcs/icons/radiant/residentdj.png",
+        "subscriber": null
+    },
+    "emotes": {
+    	"beczka": "http://i.imgur.com/mQJPo16.png",
+    	"gimbus": "http://i.imgur.com/1PY2qED.png",
+    	"kuc": "http://i.imgur.com/kbTZrdA.png",
+    	"buractwo": "http://i.imgur.com/FrT6qmI.png",
+    	"dolary": "http://i.imgur.com/HZZVISr.png",
+    	"cebula": "http://i.imgur.com/XElsJCl.png",
+    	"kanciarz": "http://i.imgur.com/JXDOuNI.png",
+    	"przypierdol": "http://i.imgur.com/mMQ1Zzx.png",
+    	"pozdrawiam": "http://i.imgur.com/PA3GnHz.png",
+    	"pankurczak": "https://i.imgur.com/cw2K1qQ.gif",
+    	"shadowban": "http://i.imgur.com/b3a2i1f.png",
+    	"kraa": "http://i.imgur.com/pwMJOUB.png",
+    	"gruu": "http://i.imgur.com/2mwIBNL.png",
+		"mystery": "http://i.imgur.com/GzNiFld.png",
+		"V": "http://i.imgur.com/7RANmJd.png",
+		"kappadex": "https://dl.dropboxusercontent.com/u/77342477/kappadex.png",
+		"glenny": "http://i.imgur.com/RjYBZtx.png",
+		"raregonciu": "http://i.imgur.com/WT2Yeie.gif"
+    }
+}
