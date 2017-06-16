@@ -2,7 +2,7 @@
     "room": "Beczkownicy Zapytaj Beczke",
     "author": "Hasztagg",
     "icon": null,
-    "css": "https://dl.dropboxusercontent.com/s/ms01hwkun3n9shm/style.css",
+    "css": "https://rawgit.com/Hasztagg/Beczkobot/master/CCS/style.css",
     "rules": {
         "allowAutorespond": true,
         "allowAutowoot": true,
@@ -53,7 +53,7 @@
     	"gruu": "http://i.imgur.com/2mwIBNL.png",
 		"mystery": "http://i.imgur.com/GzNiFld.png",
 		"V": "http://i.imgur.com/7RANmJd.png",
-		"kappadex": "https://dl.dropboxusercontent.com/u/77342477/kappadex.png",
+		"kappadex": "https://raw.githubusercontent.com/Hasztagg/Beczkobot/master/CCS/kappadex.png",
 		"glenny": "http://i.imgur.com/RjYBZtx.png",
 		"raregonciu": "http://i.imgur.com/WT2Yeie.gif"
     }
