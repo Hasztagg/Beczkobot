@@ -1,6 +1,6 @@
 /* Hattaque */
 .id-7935618 > .badge-box > i.bdg {
-    background-image: url("http://i.imgur.com/ib68IwH.jpg");
+    background-image: url("https://i.imgur.com/ib68IwH.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -8,7 +8,7 @@
 
 /* Czerwone Buractwo */
 .id-7935725 > .badge-box > i.bdg {
-    background-image: url("http://i.imgur.com/ebhKwKN.png");
+    background-image: url("https://i.imgur.com/ebhKwKN.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -16,7 +16,7 @@
 
 /* FeathermanxD - 8166828, 13411329 */
 .id-8166828 > .badge-box > i.bdg {
-    background-image: url("http://i.imgur.com/hYMSbdX.jpg");
+    background-image: url("https://i.imgur.com/hYMSbdX.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -24,7 +24,7 @@
 
 /* NowySzampon */
 .id-7827831 > .badge-box > i.bdg {
-    background-image: url("http://i.imgur.com/pOVaGCK.png");
+    background-image: url("https://i.imgur.com/pOVaGCK.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -32,7 +32,7 @@
 
 /* Karate.gif */
 .id-7842178 > .badge-box > i.bdg {
-    background-image: url("http://i.imgur.com/NdTaoil.png");
+    background-image: url("https://i.imgur.com/NdTaoil.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -40,7 +40,7 @@
 
 /* almightysaperka */
 .id-8656713 > .badge-box > i.bdg {
-    background-image: url("http://i.imgur.com/j6fnwn4.gif");
+    background-image: url("https://i.imgur.com/j6fnwn4.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -48,7 +48,7 @@
 
 /* beakel - 6628834, 13411446 */
 .id-6185549 > .badge-box > i.bdg {
-    background-image: url("http://i.imgur.com/R35u2rv.gif");
+    background-image: url("https://i.imgur.com/R35u2rv.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -56,7 +56,7 @@
 
 /* dexterw */
 .id-9654832 > .badge-box > i.bdg {
-    background-image: url("http://i.imgur.com/1YWrmBU.gif");
+    background-image: url("https://i.imgur.com/1YWrmBU.gif");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -72,7 +72,7 @@
 
 /* Mikey Wazowski */
 .id-6425281 > .badge-box > i.bdg {
-  background-image: url("http://i.imgur.com/XrHFOwN.jpg");
+  background-image: url("https://i.imgur.com/XrHFOwN.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -80,7 +80,7 @@
  
 #user-rollover.id-6425281 .badge-box > i.bdg {
   border-radius: 6px;
-  background-image: url("http://i.imgur.com/XrHFOwN.jpg");
+  background-image: url("https://i.imgur.com/XrHFOwN.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -88,13 +88,13 @@
 
 /* Beczkobot - ikonka */
 .id-9460483 > .msg > .from > i.icon-chat-manager {
-    background: url("http://i.imgur.com/Jy46QPx.png") no-repeat !important;
+    background: url("https://i.imgur.com/Jy46QPx.png") no-repeat !important;
 }
 #user-lists .list.room .user.id-9460483 .icon-chat-manager {
-    background: url("http://i.imgur.com/Jy46QPx.png") no-repeat !important;
+    background: url("https://i.imgur.com/Jy46QPx.png") no-repeat !important;
 }
 #waitlist .list .user.id-9460483 .name .icon-chat-manager {
-    background: url("http://i.imgur.com/Jy46QPx.png") no-repeat !important;
+    background: url("https://i.imgur.com/Jy46QPx.png") no-repeat !important;
 }
 
 #chat-messages .from .icon.icon-chat-dj {
@@ -106,18 +106,18 @@
 #waitlist .id-8015200.name span,
 #chat-messages [data-cid^='8015200'] .un:before{
   /*width: 0px /*imgwidth !Important;
-  background-image: url(http://pfx.domain.sfx/img.sfx) !important;*/
+  background-image: url(https://pfx.domain.sfx/img.sfx) !important;*/
   text-shadow: 0 0 10px #00FFFF !important;
   color: purple !important;
 }
 
 /* CookieMichal - ikonka WIP
 .id-6598771 > .msg > .from {
-    background: url("http://i.imgur.com/GX19uVl.png") no-repeat !important;
+    background: url("https://i.imgur.com/GX19uVl.png") no-repeat !important;
 	margin-right: 33px;
 }
 #user-lists .list.room .user.id-6598771 {
-    background: url("http://i.imgur.com/GX19uVl.png") no-repeat !important;
+    background: url("https://i.imgur.com/GX19uVl.png") no-repeat !important;
 	background-position-x: 12px !important;
 	background-position-y: 5px !important;
 }
@@ -133,7 +133,7 @@
 #user-rollover.is-staff .info .role .icon-chat-manager + span,
 #dialog-user-role .role-menu .selected .icon-chat-manager + span,
 #dialog-user-role .role-menu .menu .manager span{
-    text-shadow: 0 0 10px #00FFFF;
+    text-shadow: 0 0 10px #AB4086;
 	color: #AB4086; /* czerwony */
 }
 
@@ -142,7 +142,7 @@
 #user-rollover.is-staff .info .role .icon-chat-host + span,
 #dialog-user-role .role-menu .selected .icon-chat-host + span,
 #dialog-user-role .role-menu .menu .host span {
-    text-shadow: 0 0 10px #00FFFF;
+    text-shadow: 0 0 10px #ffd42e;
 	color: #ffd42e; /* złoty */
 }
 
@@ -151,54 +151,10 @@
 #user-rollover.is-staff .info .role .icon-chat-host + span,
 #dialog-user-role .role-menu .selected .icon-chat-cohost + span,
 #dialog-user-role .role-menu .menu .cohost span{
-    text-shadow: 0 0 10px #00FFFF;
+    text-shadow: 0 0 10px #3980E4;
 	color: #3980E4; /* niebieski */
 }
 
-/*Udyr wykruwiste efekty wybuchy
-.id-6425281:hover span.un.clickable
-{
-    transform:  rotate3d(7, 20, 9, 360deg);
-    transition: all 3s cubic-bezier(0.31, 0, 0.11, 1);
-}
- 
-.id-6425281 span.un.clickable
-{
-    transition: all 1s linear;
-}
- 
-.id-6425281:hover > .msg > .from > i.icon-chat-dj
-{
-    transform:  rotateZ(180deg);
-    transition: all 1s linear;
-}
- 
-.id-6425281 > .msg > .from > i.icon-chat-dj
-{
-    transition: all 1s linear;
-}
- 
-.id-6425281:hover > .msg > .from > i.icon.icon-chat-subscriber
-{
-    transform:  rotateZ(180deg);
-    transition: all 1s linear;
-}
- 
-.id-6425281 > .msg > .from > i.icon.icon-chat-subscriber
-{
-    transition: all 1s linear;
-}
-.id-6425281:hover > .msg > .from > i.icon.istranslator
-{
-    transform:  rotateZ(180deg);
-    transition: all 1s linear;
-}
- 
-.id-6425281 > .msg > .from > i.icon.istranslator
-{
-    transition: all 1s linear;
-}
-*/
 /* Zawsze pokazuje suwak z glosnoscia */
 #volume .slider{
   display: block !Important;
@@ -222,7 +178,7 @@
 
 #room-name {
     top: 6px;
-    background: url("http://i.imgur.com/A97Zcw2.png") no-repeat top left content-box;
+    background: url("https://i.imgur.com/A97Zcw2.png") no-repeat top left content-box;
     height: 42px;
 }
 
@@ -257,75 +213,37 @@ left: 265px;
 }
 */
 
- /* nieużywany kod - dodaje plakietkę w user-rollover
-#room-bar .icon-room:after,
-#extplug-user-profiles.id-7935725 .bdg,
-#chat-messages [data-cid^="7935725"] .bdg,
-#user-rollover.id-7935725 .bdg{
-background-image: url("http://i.imgur.com/ebhKwKN.png");}
-*/
-
-/*
-#extplug-user-profiles.id-6598771 .username,
-#user-rollover.id-6598771 .username,
-#user-lists .id-6598771 .name,
-#waitlist .id-6598771 .name span,
-#chat-messages [data-cid^='6598771'] .un:after{
-  content: ' | ıllıllı нαszтαgg ıllıllı';
-}
-*/
-
 /* 3819880 - CookieMichal
    8015200 - xoAyame */
 /*
+/*ikony na czacie*/
 
-
-
-
-   /* - ๔ן ฬ๏гรt υ∂уя קl - ikonka 
-.id-6425281 > .msg > .from > i.icon-chat-dj {
-    background: url("http://i.imgur.com/8C0aKQH.png") no-repeat !important;
+.icon-chat-host {
+    background: url("https://i.imgur.com/tcwmla4.png") !important;
 }
-#user-lists .list.room .user.id-6425281 .icon-chat-dj {
-    background: url("http://i.imgur.com/8C0aKQH.png") no-repeat !important;
+.icon-chat-cohost+span {
+    color: #3980E4 !important;
 }
-#waitlist .list .user.id-6425281 .name .icon-chat-dj {
-    background: url("http://i.imgur.com/8C0aKQH.png") no-repeat !important;
-}
+.icon-chat-cohost {
+    background: url("https://i.imgur.com/bZ37wsM.png") !important;
+} 
 
-/* Mycka1337 - ikonka 
-.id-6315045 > .msg > .from:before {
-    content: url("http://i.imgur.com/8C0aKQH.png") !important;
-	float: left;
-    margin: 0px 3px 0px 0px;
-}
-#user-lists .list.room .user.id-6315045 {
-    background: url("http://i.imgur.com/8C0aKQH.png") no-repeat !important;
-	background-position-x: 12px !important;
-	background-position-y: 5px !important;
+.icon-chat-manager {
+    background: url("https://i.imgur.com/iEuTZZe.png") !important;
 }
 
-/* Sisenbon - ikonka 
-.id-5421389 > .msg > .from:before {
-    content: url("http://i.imgur.com/8C0aKQH.png") !important;
-	float: left;
-    margin: 0px 3px 0px 0px;
-}
-#user-lists .list.room .user.id-5421389 {
-    background: url("http://i.imgur.com/8C0aKQH.png") no-repeat !important;
-	background-position-x: 12px !important;
-	background-position-y: 5px !important;
+.icon-chat-bouncer+span {
+    color: #14ffa2 !important;
 }
 
-/* Pataponpl - ikonka 
-.id-8774463 > .msg > .from:before {
-    content: url("http://i.imgur.com/8C0aKQH.png") !important;
-	float: left;
-    margin: 0px 3px 0px 0px;
+.icon-chat-bouncer {
+    background: url("https://i.imgur.com/akfF6ta.png") !important;
 }
-#user-lists .list.room .user.id-8774463 {
-    background: url("http://i.imgur.com/8C0aKQH.png") no-repeat !important;
-	background-position-x: 12px !important;
-	background-position-y: 5px !important;
+
+.icon-chat-dj+span {
+    color: #5DB4FF !important;
 }
-*/
+
+.icon-chat-dj {
+    background: url("https://cdn.radiant.dj/rcs/icons/radiant/residentdj.png") !important;
+}
