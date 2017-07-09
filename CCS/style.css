@@ -168,7 +168,7 @@
 	font-style: italic;
 }
 
-/*#room-bar * {
+#room-bar * {
     font-size: 0px;
 }
 
@@ -180,7 +180,7 @@
     top: 6px;
     background: url("https://i.imgur.com/A97Zcw2.png") no-repeat top left content-box;
     height: 42px;
-} jak są dni tematyczne to imo trochę bez sensu to jest bo zasłania tylko temat :v */
+}
 
 /* Wyróżnienie /me */
 #chat .emote {
@@ -210,24 +210,6 @@
 #dj-booth {
 background: url('https://i.imgur.com/w5S4r1D.png') no-repeat 0px 135px;
 left: 265px;
-}
-*/
-
- /* nieużywany kod - dodaje plakietkę w user-rollover
-#room-bar .icon-room:after,
-#extplug-user-profiles.id-7935725 .bdg,
-#chat-messages [data-cid^="7935725"] .bdg,
-#user-rollover.id-7935725 .bdg{
-background-image: url("https://i.imgur.com/ebhKwKN.png");}
-*/
-
-/*
-#extplug-user-profiles.id-6598771 .username,
-#user-rollover.id-6598771 .username,
-#user-lists .id-6598771 .name,
-#waitlist .id-6598771 .name span,
-#chat-messages [data-cid^='6598771'] .un:after{
-  content: ' | ıllıllı нαszтαgg ıllıllı';
 }
 */
 
